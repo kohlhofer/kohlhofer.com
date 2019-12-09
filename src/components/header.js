@@ -5,16 +5,23 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
   >
-    <div
-    >
-      <h1 style={{ margin: 0 }}>
+      <div>
         <Link
           to="/"
         >
           {siteTitle}
         </Link>
-      </h1>
-    </div>
+        <Link
+          to="/contact"
+        >
+        Contact
+        </Link>
+        <Link
+          to="/social"
+        >
+Social
+        </Link>
+      </div>
   </header>
 )
 

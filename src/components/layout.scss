@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Light.ttf");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Italic.ttf");
+  font-weight: italic;
+}
+
+body {
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: italic;
+}
