@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "SourceSansPro";
-  src: url("../fonts/SourceSansPro-Bold.ttf");
+  src: url("../fonts/SourceSansPro-Bold");
   font-weight: 700;
   font-style: normal;
 }
@@ -29,7 +29,7 @@
 body {
   font-family: "SourceSansPro", sans-serif;
   font-weight: 400;
-  background-color:#57EFFF;
+  background-color:#FFA7AE;
   font-size:20px;
   color:rgba(0,0,0,0.8);
   padding:0px;
@@ -45,26 +45,15 @@ body {
 
 .videoByLine {
   widht:560px;
-  text-align:center;
-  margin:20px 0px 50px;
-}
-
-.musicIllustration {
-  display:block;
-  margin:100px auto 0px;
+  margin:20px 0px 100px;
 }
 
 a {
   text-decoration:none;
-  border-bottom:2px solid rgba(0,0,0,0.5);
+  border-bottom:2px solid #000;
   color:rgba(0,0,0,0.8);
 }
 
-a:hover {
-  border-bottom:2px solid rgba(0,0,0,0.8);
-  color:rgba(0,0,0,1);
-  background-color:#FF0;
-}
 header {
   display:block;
   height:50px;
@@ -75,44 +64,19 @@ header {
 }
 
 .header-right {
+  margin-top:5px;
   float:right;
-  margin-top:8px;
 }
 
 .header-right a {
-  display:inline-block;
-  line-height:5px;
-  padding:5px 10px;
-  margin:0px;
+  padding:0px 10px;
+  margin:0px -10px 0px 10px;
   border-bottom:0px;
-  border-radius:5px;
-}
-
-.mainPoints {
-  list-style:none;
-  font-size:32px;
-  margin:40px;
-  font-weight:700;
-  padding:0px;
-}
-
-.mainPoints li {
-  margin-bottom:15px;
-}
- 
-.lifeStats {
-  margin:120px 0px 0px 20px;
-  padding:0px 0px 0px 40px;
-  font-weight:200;
-}
-
-.lifeStats li {
-  margin:0px 0px 10px 0px;
-  padding:0px;
+  opacity:0.8;
 }
 
 footer {
-  font-size:18px;
+  font-size:16px;
   text-align:center;
   width:100%;
   padding:60px 0px 10px 0px;

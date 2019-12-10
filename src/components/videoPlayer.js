@@ -4,9 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const VideoPlayer = ({ videoId }) => (
-  <videoPlayer>
-<iframe width="560" height="315" src={`https://www.youtube.com/embed/${videoId}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </videoPlayer>
+  <div className="videoPlayer"><iframe width="560" height="315" src={`https://www.youtube.com/embed/${videoId}?modestbranding=1&showinfo=0&fs=1`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
 )
 
 VideoPlayer.propTypes = {
