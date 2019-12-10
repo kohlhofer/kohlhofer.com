@@ -33,6 +33,7 @@ body {
   font-size:20px;
   color:rgba(0,0,0,0.8);
   padding:0px;
+  line-height:1.4;
 }
 
 .videoPlayer {
@@ -63,7 +64,7 @@ a {
 a:hover {
   border-bottom:2px solid rgba(0,0,0,0.8);
   color:rgba(0,0,0,1);
-  background-color:#FF0;
+  background-color:#F2FF00;
 }
 header {
   display:block;
@@ -97,19 +98,38 @@ header {
 }
 
 .mainPoints li {
-  margin-bottom:15px;
+  margin-bottom:10px;
 }
  
 .lifeStats {
-  margin:120px 0px 0px 20px;
-  padding:0px 0px 0px 40px;
+  margin:120px 0px 0px 40px;
+  padding:0px 0px 0px 0px;
   font-weight:200;
+  list-style: circle inside none;
 }
 
 .lifeStats li {
   margin:0px 0px 10px 0px;
   padding:0px;
 }
+
+.contactPage {
+  text-align:center;
+  margin-top:60px;
+}
+
+.contactPage p { 
+  text-align:center;
+  margin:15px auto;
+  width:60%;
+}
+
+.contactPage hr { 
+  border:1px solid #000;
+  width:100px;
+  margin:40px auto;
+}
+
 
 footer {
   font-size:18px;

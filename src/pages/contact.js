@@ -6,8 +6,17 @@ import SEO from "../components/seo"
 
 const contactPage = () => (
   <Layout pageTitle="Contact">
-	<p>Contact page?</p>
-  </Layout>
+	<div className="contactPage">
+<p>I have extensive experience working and collaborating remotely. I lived and worked on both coasts of the US (and the middle), in the UK, Austria, and Germany.</p>
+
+<hr />
+
+<p>Get in touch:</p>
+<p>alexander@kohlhofer.com</p>
+
+
+</div>  
+</Layout>
 )
 
 export default contactPage

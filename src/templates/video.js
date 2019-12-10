@@ -8,7 +8,7 @@ import modularImage from "../images/modular.svg"
 
 export default ({ pageContext: { musicVideo } }) => (
   <Layout pageTitle="Music">
-    <SEO title="musicVideo.title" />
+    <SEO title={musicVideo.title} />
     <VideoPlayer videoId={musicVideo.youTubeId} />
 <div className="videoByLine">
 <Link to={"/music/"+musicVideo.next} >Show another track</Link>

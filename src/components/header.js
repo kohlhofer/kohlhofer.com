@@ -12,7 +12,7 @@ const Header = ({ siteTitle, pageTitle }) => (
         >
           {siteTitle}
         </Link>
-{pageTitle != '' && ` /`} {pageTitle}
+{pageTitle != '' && ` →`} {pageTitle}
 <div className="header-right">
         <Link to="/contact" >
 <img src={contactIcon} alt="speach bubbles" />
