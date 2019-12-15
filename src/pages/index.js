@@ -10,7 +10,7 @@ const IndexPage = () => (
         <li><Link to="/work/">Work</Link></li>
 	<li><Link to="/music/1">Music</Link></li>
 	<li><Link to="/cv/">Curriculum Vitae</Link></li>
-	<li><Link to="/social/">Social</Link></li>
+	<li><Link to="/social/">Social Media</Link></li>
     </ul>
 <ul className="lifeStats">
 <li>leads the design team at <a href="https://cloudbees.com">CloudBees</a></li>

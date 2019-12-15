@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import SEO from "./seo"
@@ -26,16 +27,13 @@ const Layout = ({ children,pageTitle }) => {
   `)
 
   return (
-    <div>
+    <div className="wrapper">
       <SEO title={pageTitle} />
       <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
-      <div
-      >
-        <main>{children}</main>
+        <main className="content">{children}</main>
         <footer>
-          © 2000 - {new Date().getFullYear()}, Alexander Kohlhofer
+          © 2000 - {new Date().getFullYear()}, Alexander Kohlhofer. <Link to="/contact">Get in touch</Link>
         </footer>
-      </div>
     </div>
   )
 }

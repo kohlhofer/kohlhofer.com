@@ -32,22 +32,78 @@ body {
   background-color:#57EFFF;
   font-size:20px;
   color:rgba(0,0,0,0.8);
-  padding:0px;
   line-height:1.4;
 }
 
-.videoPlayer {
-  display:block;
-  background-color: #000;
+.wrapper {
   text-align:center;
-  padding:8px 0px 4px;
-  margin-top:-1px;
 }
 
-.videoByLine {
-  widht:560px;
+.content {
+  text-align:left;
+  margin:0px 40px;
+}
+
+
+@media only screen and (min-width: 600px) {
+.social {
+max-width:1000px;
+display: inline-grid;
+grid-gap: 20px;
+grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr  [col4-start] 0.5fr [col4-end];
+grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.social-about {
+grid-column: col1-start / col4-start;
+grid-row: row2-start ;
+}
+
+.social-illustration {
+grid-column: col4-start / col4-end;
+grid-row: row2-start ;
+}
+
+}
+
+.social-illustration img {
+  width:100%;
+  margin-top:30px;
+}
+
+.social h2 {
+  font-size:16px;
+  font-style:italic;
+  font-weight:400;
+  margin-top:40px;
+}
+
+.social ul {
+list-style:none;
+margin:0px 0px 30px 0px;
+padding:0px;
+}
+
+
+.video {
+  background-color: #000;
   text-align:center;
-  margin:20px 0px 50px;
+  margin:-1px -40px 20px -40px;
+}
+
+.videoPlayer {
+  display:inline-block;
+}
+
+.videoPlayer iframe, .videoPlayer  object, .videoPlayer  embed {
+  width:480px;
+  height:270px;
+  max-width:90%;
+}
+
+
+.videoByLine {
+  text-align:center;
 }
 
 .musicIllustration {
@@ -68,6 +124,7 @@ a:hover {
 }
 header {
   display:block;
+  text-align:left;
   height:50px;
   line-height:50px;
   margin:10px 20px 0px 20px;
@@ -92,7 +149,7 @@ header {
 .mainPoints {
   list-style:none;
   font-size:32px;
-  margin:40px;
+  margin:40px 0px;
   font-weight:700;
   padding:0px;
 }
@@ -102,7 +159,7 @@ header {
 }
  
 .lifeStats {
-  margin:120px 0px 0px 40px;
+  margin:120px 0px 0px 0px;
   padding:0px 0px 0px 0px;
   font-weight:200;
   list-style: circle inside none;
@@ -113,9 +170,15 @@ header {
   padding:0px;
 }
 
-.contactPage {
+.contactPage, .cvPage {
   text-align:center;
-  margin-top:60px;
+  margin:100px 0px 100px;
+}
+
+.cvPage img {
+ vertical-align:middle;
+ margin-right:50px;
+ margin-bottom:30px;
 }
 
 .contactPage p { 
@@ -125,9 +188,9 @@ header {
 }
 
 .contactPage hr { 
-  border:1px solid #000;
+  border:2px solid rgba(0,0,0,0.8);
   width:100px;
-  margin:40px auto;
+  margin:50px auto;
 }
 
 
@@ -135,7 +198,7 @@ footer {
   font-size:18px;
   text-align:center;
   width:100%;
-  padding:60px 0px 10px 0px;
+  padding:80px 0px 10px 0px;
   font-weight: 200;
 }
 
