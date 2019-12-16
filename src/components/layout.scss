@@ -92,7 +92,7 @@ padding:0px;
 }
 
 .videoPlayer {
-  display:inline-block;
+  display:block;
 }
 
 .videoPlayer iframe, .videoPlayer  object, .videoPlayer  embed {
@@ -170,7 +170,7 @@ header {
   padding:0px;
 }
 
-.contactPage, .cvPage {
+.cvPage {
   text-align:center;
   margin:100px 0px 100px;
 }
@@ -181,13 +181,25 @@ header {
  margin-bottom:30px;
 }
 
-.contactPage p { 
+
+.contact {
+max-width:1000px;
+margin:40px auto;
+}
+
+.contact-form {
+}
+
+.contact-words {
+}
+
+.contact p { 
   text-align:center;
   margin:15px auto;
   width:60%;
 }
 
-.contactPage hr { 
+.contact hr { 
   border:2px solid rgba(0,0,0,0.8);
   width:100px;
   margin:50px auto;
