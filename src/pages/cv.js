@@ -6,10 +6,10 @@ import SEO from "../components/seo"
 import brain from "../images/brain.svg"
 
 const cvPage = () => (
-  <Layout pageTitle="CV">
+  <Layout pageTitle="CV" color="yellow">
     <div className="cvPage">
     <img src={brain} alt="old fashioned brain illlustration" />
-    <a href="https://www.linkedin.com/in/kohlhofer">LinkedIn Profile</a>
+    <a className="button" href="https://www.linkedin.com/in/kohlhofer">LinkedIn Profile</a>
 </div>
   </Layout>
 )

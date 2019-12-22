@@ -15,7 +15,7 @@ import SEO from "./seo"
 import "./normalize.scss"
 import "./layout.scss"
 
-const Layout = ({ children,pageTitle }) => {
+const Layout = ({ children,pageTitle,color }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,12 +27,12 @@ const Layout = ({ children,pageTitle }) => {
   `)
 
   return (
-    <div className="wrapper">
+    <div className={'wrapper '+color}>
       <SEO title={pageTitle} />
       <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
         <main className="content">{children}</main>
         <footer>
-          © 2000 - {new Date().getFullYear()}, Alexander Kohlhofer. <Link to="/contact">Get in touch</Link>
+          © 2000 - {new Date().getFullYear()}, Alexander Kohlhofer.
         </footer>
     </div>
   )
@@ -41,10 +41,12 @@ const Layout = ({ children,pageTitle }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   pageTitle: PropTypes.string,
+  color: PropTypes.string
 }
 
 
 Layout.defaultProps = {
+  color: "purple"
 }
 
 export default Layout

@@ -1,8 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import contactIcon from "../images/contact-icon.svg"
-import socialIcon from "../images/social-icon.svg"
+import contactIcon from "../images/message.svg"
+import socialIcon from "../images/cloud.svg"
 
 const Header = ({ siteTitle, pageTitle }) => (
   <header
@@ -12,7 +12,9 @@ const Header = ({ siteTitle, pageTitle }) => (
         >
           {siteTitle}
         </Link>
-{pageTitle != '' && ` →`} {pageTitle}
+{pageTitle != '' && 
+<span className="header-path">→</span>
+} {pageTitle}
 <div className="header-right">
         <Link to="/contact" >
 <img src={contactIcon} alt="speach bubbles" />
