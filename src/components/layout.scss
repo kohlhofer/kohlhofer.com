@@ -34,6 +34,26 @@ body {
   line-height:1.4;
 }
 
+.index-back {
+  background:
+     url("../images/seascape.svg")
+     60% 220px / 1600px /* position / size */
+     no-repeat                /* repeat */
+     scroll                    /* attachment */
+     border-box              /* origin */
+     content-box              /* clip */
+     #9FFFBF;
+
+animation: colorchange 100s infinite;
+    @keyframes colorchange
+    {
+      0%   {background-color: #9FFFBF;}
+      33%  {background-color: #FFA8E4;}
+      66% {background-color: #85E3FF;}
+      100% {background-color: #9FFFBF;}
+    }
+
+}
 .purple {
   background-color:#FFA8E4;
 }
@@ -139,7 +159,6 @@ grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 .music-video {
 grid-column: col2-start / col2-end;
 grid-row: row1-start ;
-text-align:left !important;
 }
 
 .music-about{
@@ -192,9 +211,8 @@ header {
   text-align:left;
   height:50px;
   line-height:50px;
-  margin:0px 20px 0px 20px;
-  padding-top:10px;
-  border-bottom:2px solid rgba(0,0,0,0.8);
+  margin:0px 10px 0px 20px;
+//  border-bottom:2px solid rgba(0,0,0,0.8);
   text-transform:uppercase;
 }
 
@@ -221,7 +239,7 @@ margin:0px 6px 0px 10px;
 .mainPoints {
   list-style:none;
   font-size:1.8em;
-  margin:40px 0px;
+  margin:20px 0px 0px;
   font-weight:700;
   padding:0px;
 }
@@ -234,7 +252,7 @@ margin:0px 6px 0px 10px;
 }
  
 .lifeStats {
-  margin:120px 0px 0px 0px;
+  margin:140px 0px 0px 0px;
   padding:0px 0px 0px 0px;
   font-weight:200;
   list-style: circle inside none;
@@ -262,11 +280,8 @@ max-width:500px;
 margin:40px auto;
 }
 
-.contact-form {
-}
-
 .contact-words {
-  text-align:center;
+  text-align:left;
 }
 
 .contact p { 
@@ -352,11 +367,11 @@ button:active, .button:active {
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 .index {
 max-width:1000px;
 display: grid;
-grid-gap: 40px;
+grid-gap: 0px;
 grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col2-end];
 grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
 }

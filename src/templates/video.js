@@ -22,8 +22,8 @@ Show another track</Link>
 </p>
 </div>
 <div className="music-about">
- <p>I enjoy making electronic music without a computer. You can find the results on <a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">YouTube</a> and <a href="https://www.instagram.com/kohlhofer/">Instagram</a>. </p>
-<p>Among other things I use a modular synthesizer.</p>
+ <p>I make electronic music without using a computer. You can find come of the tracks on <a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">YouTube</a> and <a href="https://www.instagram.com/kohlhofer/">Instagram</a>. </p>
+<p><Link to="/contact/">Get in touch</Link> if you would like to use my music or make some together.</p>
 </div>
 <div className="music-illustration">
 <img src={modularImage} className="musicIllustration" alt="illustration of a modular synthesizer" />

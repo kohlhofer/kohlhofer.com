@@ -11,7 +11,7 @@ import neutral from "../images/sleeping-face.svg"
 import negative from "../images/frowning-face.svg"
 
 const socialPage = () => (
-  <Layout pageTitle="Social Media" color="blue-green">
+  <Layout pageTitle="Social Media" color="purple">
    <div className="social">
      <div className="social-active">
     <img className="social-sentiment" src={positive} alt="check mark" />
@@ -27,6 +27,7 @@ const socialPage = () => (
 <li><a href="https://www.instagram.com/kohlhofer/">Instagram</a></li>
 <li><a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">Youtube</a></li>
 <li><a href="https://www.linkedin.com/in/kohlhofer/">LinkedIn</a></li>
+<li><a href="https://dribbble.com/kohlhofer">Dribbble</a></li>
         </ul>
      </div>
      <div className="social-dead">
@@ -48,7 +49,7 @@ const socialPage = () => (
      </div>
      <div className="social-about">
        <p>It feels like we are spending more and more time in an individualistic social media hallucination. Through that lens reality is no longer a shared experience. Instead it is warped to re-inforce and exploit our biases.</p>
-<p>We may not escape Neil Stephenson’s Ameristan. But you can limit your own exposure to the poisonous hallucination. Opt out.</p>
+<p>I try to limit my own exposure to the poisonous hallucination.</p>
      </div>
    </div>
   </Layout>

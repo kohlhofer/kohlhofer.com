@@ -5,10 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout pageTitle="">
+  <Layout pageTitle="Welcome" color="index-back">
    <div className="index">
     <ul className="mainPoints">
-        <li><Link to="/work/">Work</Link></li>
+        <li><Link to="/work/">Product / Design</Link></li>
 	<li><Link to="/music/1">Music</Link></li>
 	<li><Link to="/cv/">Curriculum Vitae</Link></li>
 	<li><Link to="/social/">Social Media</Link></li>

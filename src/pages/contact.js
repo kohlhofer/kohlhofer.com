@@ -24,7 +24,8 @@ const contactPage = () => (
     </form> 
 <hr />
 <div className="contact-words">
-<p>I have extensive experience working and collaborating remotely. I lived and worked on both coasts of the US (and the middle), in the UK, Austria, and Germany.</p>
+<p>Get in touch to talk product, design, music, or anything.</p>
+<p>I have extensive experience working and collaborating remotely. So far I have lived and worked in the US, the UK, Austria, and Germany.</p>
 </div>
 
 </div>  

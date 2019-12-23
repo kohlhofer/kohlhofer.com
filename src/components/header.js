@@ -4,6 +4,13 @@ import React from "react"
 import contactIcon from "../images/message.svg"
 import socialIcon from "../images/cloud.svg"
 
+
+function getPath(pageTitle) {
+  if (pageTitle != 'Welcome') {
+    return <span><span className="header-path">→</span> {pageTitle}</span>;
+  }
+}
+
 const Header = ({ siteTitle, pageTitle }) => (
   <header
   >
@@ -12,9 +19,7 @@ const Header = ({ siteTitle, pageTitle }) => (
         >
           {siteTitle}
         </Link>
-{pageTitle != '' && 
-<span className="header-path">→</span>
-} {pageTitle}
+{getPath(pageTitle)}
 <div className="header-right">
         <Link to="/contact" >
 <img src={contactIcon} alt="speach bubbles" />
