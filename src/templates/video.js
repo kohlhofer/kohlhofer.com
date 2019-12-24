@@ -8,7 +8,7 @@ import modularImage from "../images/modular.svg"
 import refresh from "../images/refresh.svg"
 
 export default ({ pageContext: { musicVideo } }) => (
-  <Layout pageTitle="Music" color="blue">
+  <Layout pageTitle="Music" color="grass-green">
     <SEO title={musicVideo.title} />
 <div className="music">
 
