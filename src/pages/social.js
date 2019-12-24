@@ -4,7 +4,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import trump from "../images/trump.svg"
 import positive from "../images/neutral-face.svg"
 import neutral from "../images/sleeping-face.svg"

@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Ticker from "../components/ticker"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout pageTitle="Welcome" color="index-back">
@@ -14,14 +13,15 @@ const IndexPage = () => (
 	<li><Link to="/social/">Social Media</Link></li>
 	<li><Link to="/contact/">Contact</Link></li>
     </ul>
-<ul className="lifeStats">
-<li>leads the design team at <a href="https://cloudbees.com">CloudBees</a></li>
-<li>was head of product at <a href="https://uservoice.com">UserVoice</a></li>
-<li>created and later sold Weewar to Electronic Arts</li>
-<li>co-founded <a href="https://spreedly.com">Spreedly</a></li>
-<li>was creative director of soda in London, UK</li>
-<li>started <a href="https://www.snk.de/en/">Schoene Neue Kinder</a> in Munich, Germany</li>
-</ul>
+        <Ticker>
+<span>lead the Design Team at <a href="https://cloudbees.com">CloudBees</a></span>
+<span>was Head of Product at <a href="https://uservoice.com">UserVoice</a></span>
+<span>created and later sold the online strategy game Weewar to Electronic Arts</span>
+<span>co-founded payment orchestrator <a href="https://spreedly.com">Spreedly</a></span>
+<span>created the anti censorship campaign <a href="https://www.amnesty.org.uk/press-releases/new-amnesty-45th-anniversary-campaign-tackles-internet-repression">Irrepressible</a> for Amnesty International</span>
+<span>was Creative Director of Soda Creative in London, UK</span>
+<span>started <a href="https://www.snk.de/en/">Schoene Neue Kinder</a> in Munich, Germany</span>
+  </Ticker>
 </div>
   </Layout>
 )

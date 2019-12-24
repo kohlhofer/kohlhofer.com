@@ -32,7 +32,7 @@ const Layout = ({ children,pageTitle,color }) => {
       <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
         <main className="content">{children}</main>
         <footer>
-          © 2000 - {new Date().getFullYear()}, Alexander Kohlhofer.
+          © 2000-{new Date().getFullYear()}, Alexander Kohlhofer.
         </footer>
     </div>
   )

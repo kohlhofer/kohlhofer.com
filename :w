@@ -1,0 +1,42 @@
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
+import React, { Component } from "react"
+
+
+
+function returnRandomChild(children) {
+ return children[Math.floor(Math.random() * children.length)];
+}
+
+class Ticker extends Component {
+  constructor() {
+    super()
+    this.state = {
+      showMenu: false,
+    }
+  }
+
+componentDidMount() {
+  this.interval = setInterval(() => this.setState({ time: Date.now() }), 2000);
+}
+componentWillUnmount() {
+  clearInterval(this.interval);
+}
+
+refreshTicker() {
+  this.setState({ time: Date.now() })
+}
+
+  render() {
+   const children = this.props.children
+   return(
+<ticker>
+   Hi, my name is Alex and I {returnRandomChild(children)}
+   <p><button onClick={()=>this.refreshTicker()}>Refresh</button></p>
+  </ticker>
+);
+}
+}
+
+
+export default Ticker

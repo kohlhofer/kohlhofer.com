@@ -212,13 +212,13 @@ header {
   height:50px;
   line-height:50px;
   margin:0px 10px 0px 20px;
-//  border-bottom:2px solid rgba(0,0,0,0.8);
   text-transform:uppercase;
+//  border-bottom:2px solid rgba(0,0,0,0.8);
 }
 
 .header-right {
   float:right;
-  margin-top:8px;
+  margin-top:5px;
 }
 
 .header-path {
@@ -240,7 +240,7 @@ margin:0px 6px 0px 10px;
   list-style:none;
   font-size:1.8em;
   margin:20px 0px 0px;
-  font-weight:700;
+  font-weight:400;
   padding:0px;
 }
 
@@ -252,10 +252,10 @@ margin:0px 6px 0px 10px;
 }
  
 .lifeStats {
-  margin:140px 0px 0px 0px;
+  margin:140px 0px 0px 20px;
   padding:0px 0px 0px 0px;
   font-weight:200;
-  list-style: circle inside none;
+  list-style: circle outside;
 }
 
 .lifeStats li {
@@ -381,7 +381,7 @@ grid-column: col1-start / col2-start;
 grid-row: row1-start ;
 }
 
-.lifeStats{
+ticker {
 grid-column: col2-start / col2-end;
 grid-row: row2-start ;
 }
@@ -391,4 +391,44 @@ grid-row: row2-start ;
 .index {
 margin:40px auto;
 text-align:left;
+}
+
+.index ticker {
+  display:block;
+  margin:150px 0px;
+}
+
+.ticker-fadetrue, .ticker-fadefalse {
+
+}
+
+.ticker-message {
+  font-size:1.8em;
+  font-weight:200;
+}
+
+.ticker-label {
+  font-size:1em;
+  font-weight:200;
+  margin-bottom:10px;
+}
+
+.ticker-fadetrue {
+  animation: blinkIn 0.5s;
+    @keyframes blinkIn
+    {
+      0%   {opacity: 0;}
+      10%   {opacity: 0;}
+      100% {opacity: 1;}
+    }
+}
+
+.ticker-fadefalse {
+  animation: blinkInB 1.2s;
+    @keyframes blinkInB
+    {
+      0%   {opacity: 0;}
+      10%   {opacity: 0;}
+      100% {opacity: 1;}
+    }
 }

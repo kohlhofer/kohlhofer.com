@@ -3,8 +3,10 @@ module.exports = {
     title: `A. Kohlhofer`,
     description: `Personal site of Alexander Kohlhofer. All rights reserved.`,
     author: `Alexander Kohlhofer`,
+    siteUrl: `https://kohlhofer.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
