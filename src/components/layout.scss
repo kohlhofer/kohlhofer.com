@@ -160,7 +160,7 @@ padding:0px;
 }
 
 .social li {
- margin-bottom:3px;
+ margin-bottom:5px;
 }
 
 .social li span {
@@ -265,7 +265,7 @@ margin:0px 6px 0px 10px;
 
 .mainPoints {
   list-style:none;
-  font-size:1.8em;
+  font-size:1.7em;
   margin:20px 0px 0px;
   font-weight:400;
   padding:0px;
@@ -277,28 +277,16 @@ margin:0px 6px 0px 10px;
 
 .mainPoints a {
 }
- 
-.lifeStats {
-  margin:140px 0px 0px 20px;
-  padding:0px 0px 0px 0px;
-  font-weight:200;
-  list-style: circle outside;
-}
-
-.lifeStats li {
-  margin:0px 0px 10px 0px;
-  padding:0px;
-}
 
 .cvPage {
   text-align:center;
-  margin:100px 0px 100px;
+  margin:50px 0px 100px;
 }
 
 .cvPage img {
  vertical-align:middle;
- margin-right:50px;
  margin-bottom:40px;
+ max-width:100%;
 }
 
 
@@ -422,7 +410,7 @@ text-align:left;
 
 .index ticker {
   display:block;
-  margin:150px 0px;
+  margin:155px 0px;
 }
 
 .ticker-fadetrue, .ticker-fadefalse {
@@ -430,7 +418,7 @@ text-align:left;
 }
 
 .ticker-message {
-  font-size:1.8em;
+  font-size:1.6em;
   font-weight:200;
 }
 
