@@ -7,7 +7,7 @@ const contactPage = () => (
   <Layout pageTitle="Get in touch" color="blue">
 	<div className="contact">
 
-    <form method="POST" action="https://getform.io/f/817f8dc3-d396-441f-a0ce-8fc76da7a1b3"> 
+    <form method="POST" data-netlify="true" action="" name="contact" netlify-honeypot="bot-field"> 
 <p>
         <label for="message">Your message</label> 
         <textarea rows="4" type="text" name="message" rules=""/> 
@@ -17,6 +17,9 @@ const contactPage = () => (
         <label for="email">Your email</label> 
         <input type="email" name="email" rules="required|email|max:255"/> 
 </p>
+<p class="form-hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
 <p>
         <button type="submit">Send message</button> 
 </p>

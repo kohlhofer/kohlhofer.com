@@ -12,8 +12,7 @@ import { Link } from "gatsby"
 
 import Header from "./header"
 import SEO from "./seo"
-import "./normalize.scss"
-import "./layout.scss"
+import "../css/index.scss"
 
 const Layout = ({ children,pageTitle,color }) => {
   const data = useStaticQuery(graphql`

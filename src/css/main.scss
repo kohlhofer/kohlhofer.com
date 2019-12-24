@@ -228,10 +228,12 @@ a {
   color:rgba(0,0,0,0.8);
 }
 
+@media (hover: hover) {
 a:hover {
   border-bottom:1px solid rgba(0,0,0,0.8);
   color:rgba(0,0,0,1);
   background-color:#F2FF00;
+}
 }
 header {
   display:block;
@@ -322,6 +324,11 @@ footer {
 form {
 text-align:left;
 }
+
+.form-hidden {
+display:none;
+}
+
 
 label {
 display:block;
