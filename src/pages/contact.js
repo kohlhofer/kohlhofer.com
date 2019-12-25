@@ -7,7 +7,7 @@ const contactPage = () => (
   <Layout pageTitle="Get in touch" color="blue">
   <div className="contact">
 
-  <form method="POST" data-netlify="true" name="contact" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"> 
+  <form method="POST" action="/thankyou" data-netlify="true" name="contact" netlify-honeypot="bot-field" enctype="application/x-www-form-urlencoded"> 
   <p>
   <label for="message">Your message</label> 
   <textarea rows="5" type="text" name="message" id="message"/> 
