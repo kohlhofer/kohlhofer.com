@@ -32,7 +32,7 @@ body {
 .index-back {
   background:
   url("../images/seascape.svg")
-  60% 220px / 1600px /* position / size */
+  center 220px / 1600px /* position / size */
   no-repeat                /* repeat */
   scroll                    /* attachment */
   border-box              /* origin */
@@ -236,8 +236,8 @@ header {
 
 .mainPoints {
   list-style:none;
-  font-size:1.7em;
-  margin:20px 0px 0px;
+  font-size:1.6em;
+  margin:40px 0px 0px;
   font-weight:400;
   padding:0px;
 }
@@ -258,6 +258,10 @@ header {
   vertical-align:middle;
   margin-bottom:40px;
   max-width:100%;
+}
+
+.cvPage a {
+  margin: 0px 50px;
 }
 
 
@@ -385,13 +389,13 @@ button:active, .button:active {
 }
 
 .index {
-  margin:40px auto;
+  margin:0px auto;
   text-align:left;
 }
 
 .index ticker {
   display:block;
-  margin:155px 0px;
+  margin:150px 0px;
 }
 
 .ticker-fadetrue, .ticker-fadefalse {

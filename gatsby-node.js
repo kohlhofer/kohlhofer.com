@@ -5,13 +5,17 @@
  */
 
 // You can delete this file if you're not using it
-exports.createPages = async ({ actions: { createPage } }) => {
+
+const path = require(`path`)
+
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const musicVideos = [
     { title: "Jamuary2018 Day 8", youTubeId: "7MWWRs_Nyj8"},
     { title: "Patch with newly added XAOC Tallin and Zvex Instant Lo-Fi Junky", youTubeId: "RQ5jpYfPGdk"},
     { title: "Woke", youTubeId: "1PypZeYPYcI"}
   ]
 
+  // Music videos  
   count = 0;
   musicVideos.forEach(musicVideo => {
     count++;
@@ -25,6 +29,30 @@ exports.createPages = async ({ actions: { createPage } }) => {
       path: `/music/${musicVideo.path}/`,
       component: require.resolve("./src/templates/video.js"),
       context: { musicVideo },
+    })
+  })
+
+  // Blog posts
+  const result = await graphql(`
+    {
+      allMarkdownRemark {
+	edges {
+	  node {
+	    frontmatter {
+	      path
+	    }
+	  }
+	}
+      }
+    }
+  `)
+  if (result.errors) {
+    console.error(result.errors)
+  }
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: path.resolve(`src/templates/post.js`),
     })
   })
 }
