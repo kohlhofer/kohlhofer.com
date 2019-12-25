@@ -14,20 +14,20 @@ function getPath(pageTitle) {
 const Header = ({ siteTitle, pageTitle }) => (
   <header
   >
-        <Link
-          to="/"
-        >
-          {siteTitle}
-        </Link>
-{getPath(pageTitle)}
-<div className="header-right">
-        <Link to="/contact" >
-<img src={contactIcon} alt="speach bubbles" />
-</Link>
-        <Link to="/social" >
-<img src={socialIcon} alt="sad face" />
-</Link>
-</div>
+  <Link
+  to="/"
+  >
+  {siteTitle}
+  </Link>
+  {getPath(pageTitle)}
+  <div className="header-right">
+  <Link to="/contact" >
+  <img src={contactIcon} alt="speach bubbles" />
+  </Link>
+  <Link to="/social" >
+  <img src={socialIcon} alt="sad face" />
+  </Link>
+  </div>
   </header>
 )
 

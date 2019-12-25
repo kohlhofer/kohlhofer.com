@@ -6,10 +6,10 @@ import brain from "../images/brain.svg"
 
 const cvPage = () => (
   <Layout pageTitle="CV" color="purple">
-    <div className="cvPage">
-    <img src={brain} alt="old fashioned brain illlustration" />
-    <a className="button" href="https://www.linkedin.com/in/kohlhofer">LinkedIn Profile</a>
-</div>
+  <div className="cvPage">
+  <img src={brain} alt="old fashioned brain illlustration" />
+  <a className="button" href="https://www.linkedin.com/in/kohlhofer">LinkedIn Profile</a>
+  </div>
   </Layout>
 )
 

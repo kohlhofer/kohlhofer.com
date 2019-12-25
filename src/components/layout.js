@@ -27,12 +27,12 @@ const Layout = ({ children,pageTitle,color }) => {
 
   return (
     <div className={'wrapper '+color}>
-      <SEO title={pageTitle} />
-      <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
-        <main className="content">{children}</main>
-        <footer>
-          © 2000-{new Date().getFullYear()}, Alexander Kohlhofer.
-        </footer>
+    <SEO title={pageTitle} />
+    <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
+    <main className="content">{children}</main>
+    <footer>
+    © 2000-{new Date().getFullYear()}, Alexander Kohlhofer.
+    </footer>
     </div>
   )
 }
