@@ -6,30 +6,28 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   return (
-    <Layout>
-    <div>
+    <Layout pageTitle="Blog">
+    <p>A blog written by me... </p>
+    <h2>Blog Posts</h2>
+    <ul>
     {data.allMarkdownRemark.edges.map(({ node }, index) => (
-<div>
-      <h2> <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link> </h2>
-      <p>{node.excerpt}
-      <Link to={node.frontmatter.path}>continue</Link>
- </p>
-      <p>Words: {node.wordCount.words}. Time to read: {node.timeToRead}, written {node.frontmatter.date}.</p>
-      </div>
+<li>
+      <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>, Time to read: {node.timeToRead}, {node.frontmatter.date}
+      </li>
     ))}
-      </div>
+      </ul>
     </Layout>
   )
 }
 
 export const query = graphql`
     query {
-allMarkdownRemark {
+allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
     edges {
       node {
         frontmatter {
           path
-          date(fromNow: true)
+        date(formatString: "MMMM DD, YYYY")
           title
         }
         timeToRead

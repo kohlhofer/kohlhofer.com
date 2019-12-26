@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import SEO from "./seo"
 import "../css/index.scss"
 
@@ -30,9 +31,7 @@ const Layout = ({ children,pageTitle,color }) => {
     <SEO title={pageTitle} />
     <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
     <main className="content">{children}</main>
-    <footer>
-    © 2000-{new Date().getFullYear()}, Alexander Kohlhofer.
-    </footer>
+    <Footer />
     </div>
   )
 }
