@@ -79,7 +79,7 @@ const socialPage = () => (
           },
           "move": {
             "enable": true,
-            "speed": 2,
+            "speed": 3,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -87,14 +87,14 @@ const socialPage = () => (
             "bounce": false,
             "attract": {
               "enable": false,
-              "rotateX": 600,
-              "rotateY": 1200
+              "rotateX": 800,
+              "rotateY": 800
             }
           }
         },
-        "interactivity": {
-          "detect_on": "window",
-          "events": {
+	  "interactivity": {
+	    "detect_on": "window",
+	    "events": {
             "onhover": {
               "enable": true,
               "mode": "grab"
@@ -103,7 +103,7 @@ const socialPage = () => (
               "enable": false,
               "mode": "push"
             },
-            "resize": false
+            "resize": true
           },
           "modes": {
             "grab": {
