@@ -6,16 +6,21 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   return (
-    <Layout pageTitle="Blog">
-    <p>A blog written by me... </p>
-    <h2>Blog Posts</h2>
-    <ul>
+    <Layout pageTitle="Blog" color="blue-green">
+    <ul className="blog-entries">
     {data.allMarkdownRemark.edges.map(({ node }, index) => (
-<li>
-      <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>, Time to read: {node.timeToRead}, {node.frontmatter.date}
+      <li className="blog-entry">
+      <div className="blog-entry-meta">
+	{node.frontmatter.date}
+      </div>
+      <div className="blog-entry-title">
+      <Link  className="blog-entry-link" to={node.frontmatter.path}>
+	{node.frontmatter.title}
+      </Link>
+      </div>
       </li>
     ))}
-      </ul>
+    </ul>
     </Layout>
   )
 }
