@@ -4,6 +4,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Particles from 'react-particles-js'
 import trump from "../images/trump.svg"
 import positive from "../images/neutral-face.svg"
 import neutral from "../images/sleeping-face.svg"
@@ -18,8 +19,124 @@ function randomMargin() {
 
 
 const socialPage = () => (
-  <Layout pageTitle="Social Media" color="social-back">
-  <div className="social">
+  <Layout pageTitle="Social Media" color="">
+  
+<Particles 
+      className="particles"
+      params={{
+        "particles": {
+          "number": {
+            "value": 50,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#FF7A79"
+          },
+          "shape": {
+            "type": "circle",
+            "stroke": {
+              "width": 0,
+              "color": "#000"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 1,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 1,
+              "opacity_min": 0.3,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 2,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 120,
+            "color": "#000",
+            "opacity": 0.5,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "window",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": false,
+              "mode": "push"
+            },
+            "resize": false
+          },
+          "modes": {
+            "grab": {
+              "distance": 150,
+              "line_linked": {
+                "opacity": 0.2
+              }
+            },
+            "bubble": {
+              "distance": 200,
+              "size": 3,
+              "duration": 2,
+              "opacity": 1,
+              "speed": 8
+            },
+            "repulse": {
+              "distance": 50,
+              "duration": 0.5 
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      }}
+
+    />
+
+<div className="social">
   <div className="social-active">
   <img className="social-sentiment" src={positive} alt="check mark" />
   <h2>Actively engaged:</h2>
