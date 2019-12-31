@@ -20,19 +20,25 @@ export default ({ pageContext: { musicVideo } }) => (
   </div>
   </div>
   <div className="music-control">
-  <p className="music-title">Above: {musicVideo.title}</p>
+  <p className="music-title">{musicVideo.title}</p>
 <p><Link to={"/music/"+musicVideo.next} className="button">
   <img src={refresh} className="" alt="refresh icon" />
   Show another track</Link></p>
   </div>
   <div className="music">
   <div className="music-about">
-  <p>You can find many of the tracks on <a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">YouTube</a> and <a href="https://www.instagram.com/kohlhofer/">Instagram</a>. </p>
-  <p>I do not use a computer to make music. One of my favourite instruments is my <a href="https://www.modulargrid.net/e/racks/view/1029090">Eurorack modular synthesizer</a>.</p>
+  <p>You can find more tracks on <a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">YouTube</a> and <a href="https://www.instagram.com/kohlhofer/">Instagram</a>. </p>
   <p><Link to="/contact/">Get in touch</Link> if you would like to use my music or make some together.</p>
   </div>
+  <div className="music-about">
+  <p>I do not use a computer to make music.</p>
+<p>My favourite instrument is my <a href="https://www.modulargrid.net/e/racks/view/1029090">Eurorack modular synthesizer</a> which is a source of constant sonic surprises and happy accidents..</p>
+  </div>
+  <div className="music-about">
+  <p>Early on I rushed out two albums. You can still find tem  under the project <a href="https://distrokid.com/hyperfollow/citizenkrag/5gU">Citizen Krag</a> on all major platforms.</p>
+  </div>
   <div className="music-illustration">
-  <img src={modularImage} className="musicIllustration" alt="illustration of a modular synthesizer" />
+  <img src={modularImage} className="musicIllustration" alt="illustration of a modular synthesizer" width="200px"/>
   </div>
   </div>
   </Layout>
