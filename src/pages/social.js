@@ -26,10 +26,10 @@ const socialPage = () => (
       params={{
         "particles": {
           "number": {
-            "value": 50,
+            "value": 15,
             "density": {
               "enable": true,
-              "value_area": 800
+              "value_area": 400
             }
           },
           "color": {
@@ -61,27 +61,27 @@ const socialPage = () => (
             }
           },
           "size": {
-            "value": 2,
+            "value": 3,
             "random": false,
             "anim": {
               "enable": false,
-              "speed": 40,
-              "size_min": 0.1,
+              "speed": 10,
+              "size_min": 2,
               "sync": false
             }
           },
           "line_linked": {
             "enable": true,
-            "distance": 120,
+            "distance": 150,
             "color": "#000",
-            "opacity": 0.5,
+            "opacity": 0.2,
             "width": 1
           },
           "move": {
             "enable": true,
-            "speed": 3,
-            "direction": "none",
-            "random": false,
+            "speed": 1,
+            "direction": "top-right",
+            "random": true,
             "straight": false,
             "out_mode": "out",
             "bounce": false,
@@ -100,31 +100,31 @@ const socialPage = () => (
               "mode": "grab"
             },
             "onclick": {
-              "enable": false,
+              "enable": true,
               "mode": "push"
             },
             "resize": true
           },
           "modes": {
             "grab": {
-              "distance": 150,
+              "distance": 180,
               "line_linked": {
                 "opacity": 0.2
               }
             },
             "bubble": {
-              "distance": 200,
-              "size": 3,
-              "duration": 2,
+              "distance": 180,
+              "size": 8,
+              "duration": 0.1,
               "opacity": 1,
-              "speed": 8
-            },
+              "speed": 0.5 
+           },
             "repulse": {
-              "distance": 50,
-              "duration": 0.5 
+              "distance": 180,
+              "duration": 0.1 
             },
             "push": {
-              "particles_nb": 4
+              "particles_nb": 1
             },
             "remove": {
               "particles_nb": 2
