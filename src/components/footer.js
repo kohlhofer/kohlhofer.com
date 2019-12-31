@@ -5,6 +5,7 @@ import React from "react"
 
 const Footer = () => (
   <footer >
+  <div className="footer-container">
   <div className="footer-sitemap">
     <h3>Navigation</h3>
   <ul>
@@ -25,6 +26,7 @@ const Footer = () => (
     <h3>Small print</h3>
     <p>This is my personal site. Opinions expressed are solely my own and do not express the views of others.</p>
     © 2000-{new Date().getFullYear()}, Alexander Kohlhofer.
+  </div>
   </div>
   </footer>
 )

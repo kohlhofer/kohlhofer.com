@@ -151,6 +151,7 @@ const socialPage = () => (
   <li style={randomMargin()}><span><a href="https://www.instagram.com/kohlhofer/">Instagram</a></span></li>
   <li style={randomMargin()}><span><a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">Youtube</a></span></li>
   <li style={randomMargin()}><span><a href="https://www.linkedin.com/in/kohlhofer/">LinkedIn</a></span></li>
+  <li style={randomMargin()}><span><a href="https://soundcloud.com/kohlhofer_music">Soundcloud</a></span></li>
   <li style={randomMargin()}><span><a href="https://dribbble.com/kohlhofer">Dribbble</a></span></li>
   </ul>
   </div>

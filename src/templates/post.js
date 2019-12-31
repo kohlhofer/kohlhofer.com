@@ -12,10 +12,10 @@ export default function Template({ data }) {
   <SEO title={frontmatter.title} />
     <div className="blog-post">
       <h1 className="blog-post-title">{frontmatter.title}</h1>
-    <div className="blog-post-meta">
+    <p className="blog-post-meta">
       <div>{frontmatter.date}</div>
       <div>{timeToRead} minutes read</div>
-</div>
+</p>
       <div
         className="blog-post-content"
         dangerouslySetInnerHTML={{ __html: html }}
