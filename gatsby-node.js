@@ -19,6 +19,14 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     { title: "1974", youTubeId: "ev5zKEGVsmA"},
     { title: "Krell Train (a generative modular synth patch)", youTubeId: "AHxWRgoGI-w"},
     { title: "Magnetic", youTubeId: "JKPPnTaV6Bo"},
+    { title: "Lazy Daze", youTubeId: "BEaoNRfiHbs"},
+    { title: "Asedo - tape based generative ambient eurorack patch", youTubeId: "MgxXnnZYWEY"},
+    { title: "Habits", youTubeId: "noHfg_qJQ5o"},
+    { title: "Fragments – a morphagene composition with piano", youTubeId: "qZ5WHedzeZg"},
+    { title: "Lines (MengQi) with little visitors", youTubeId: "E75kOhOginY"},
+    { title: "Findus", youTubeId: "gsLNknKpgA0"},
+    { title: "Everything has changed", youTubeId: "8NruWzs6MKE"},
+    { title: "Clutter - a fully generative Eurorack Patch", youTubeId: "TCl5bcWLIPI"},
     { title: "Last day (12/31/2017)", youTubeId: "dOJfqd_Fqg0"}
   ]
 
