@@ -12,7 +12,14 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const musicVideos = [
     { title: "Jamuary2018 Day 8", youTubeId: "7MWWRs_Nyj8"},
     { title: "Patch with newly added XAOC Tallin and Zvex Instant Lo-Fi Junky", youTubeId: "RQ5jpYfPGdk"},
-    { title: "Woke", youTubeId: "1PypZeYPYcI"}
+    { title: "Woke", youTubeId: "1PypZeYPYcI"},
+    { title: "Iconic Genes", youTubeId: "_dkO3dsNYdw"},
+    { title: "Delta Eurorack Patch", youTubeId: "3yvZve8e9do"},
+    { title: "Steady State Lost", youTubeId: "X82w64tnqlk"},
+    { title: "1974", youTubeId: "ev5zKEGVsmA"},
+    { title: "Krell Train (a generative modular synth patch)", youTubeId: "AHxWRgoGI-w"},
+    { title: "Magnetic", youTubeId: "JKPPnTaV6Bo"},
+    { title: "Last day (12/31/2017)", youTubeId: "dOJfqd_Fqg0"}
   ]
 
   // Music videos  

@@ -7,7 +7,7 @@ const IndexPage = () => (
   <Layout pageTitle="Welcome" color="index-back">
   <div className="index">
   <ul className="mainPoints">
-  <li><Link to="/work/">Product / Design</Link></li>
+  <li><Link to="/work/">Product & Design</Link></li>
   <li><Link to="/music/1">Music</Link></li>
   <li><Link to="/blog">Blog</Link></li>
   <li><Link to="/cv/">Curriculum Vitae</Link></li>
