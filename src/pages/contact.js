@@ -20,6 +20,7 @@ const contactPage = () => (
   <p class="form-hidden">
   <label>Don’t fill this out if you're human:</label> 
   <input name="bot-field" />
+  <input type="hidden" name="form-name" value="contact" />
   </p>
   <p>
   <button type="submit">Send message</button> 

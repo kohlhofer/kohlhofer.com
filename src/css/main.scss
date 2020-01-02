@@ -22,7 +22,7 @@ body {
 .index-back {
   background:
   url("../images/seascape.svg")
-  center 200px / 1600px /* position / size */
+  center 210px / 1600px /* position / size */
   no-repeat                /* repeat */
   scroll                    /* attachment */
   border-box              /* origin */
@@ -142,7 +142,7 @@ margin: 0px -40px;
 
 .music-control {
   text-align:center;
-  margin-bottom:40px;
+  margin-bottom:32px;
 }
 
 .music-title {
@@ -164,9 +164,6 @@ margin: 0px -40px;
   .music-video {
     grid-column: col1-start / col3-end;
     grid-row: row1-start ;
-  }
-
-  .music-about{
   }
 
   .music-illustration {
@@ -513,13 +510,13 @@ align-self: start;
    font-weight:200;
    font-size:16px;
    line-height: 24px;
-align-self: stretch;
+align-self: center;
     border-top:1px solid rgba(0,0,0,0.2);
     padding-top: 16px;
 }
 
 .blog-post-author div:first-child {
-  margin-bottom:24px;
+  margin-bottom:16px;
 }
 
 .blog-post-content {
@@ -531,7 +528,7 @@ align-self: stretch;
     max-width:1000px;
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: [col1-start] 1fr  [col2-start] 2fr  [col3-start] 1fr [col4-start] 0.5fr [col4-end]; 
+    grid-template-columns: [col1-start] 1fr  [col2-start] 1.5fr  [col3-start] 1.5fr [col3-end]; 
     grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
   }
 
@@ -542,7 +539,7 @@ align-self: stretch;
 
   .blog-post-content {
     grid-row: row2-start;
-    grid-column: col2-start / col4-start;
+    grid-column: col2-start / col3-end;
   }
 
   .blog-post-meta {
@@ -553,7 +550,7 @@ align-self: stretch;
 
   .blog-post-author {
     grid-row: row1-start;
-    grid-column: col3-start / col4-end;
+    grid-column: col3-start / col3-end;
     border-width:0px;
     border-left:1px solid rgba(0,0,0,0.2);
     padding: 0px 0px 0px 20px;
