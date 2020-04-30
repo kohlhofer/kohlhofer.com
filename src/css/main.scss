@@ -7,7 +7,7 @@ body {
   background-color:#000;
 }
 
-.wrapper {
+wrapper {
   text-align:center;
   margin:0px;
   padding:0px;
@@ -21,8 +21,8 @@ body {
 
 .index-back {
   background:
-  url("../images/seascape.svg")
-  center 210px / 1600px /* position / size */
+  url("../images/line.svg")
+  center 130px / 1600px /* position / size */
   no-repeat                /* repeat */
   scroll                    /* attachment */
   border-box              /* origin */
@@ -74,7 +74,7 @@ body {
   }
 
   .social-about {
-    grid-column: col2-start / col4-start;
+    grid-column: col2-start / col4-end;
     grid-row: row2-start ;
   }
 
@@ -213,7 +213,7 @@ header {
   text-align:left;
   height:48px;
   line-height:48px;
-  margin:0px 8px 0px 16px;
+  margin:0px 16px 0px 16px;
   text-transform:uppercase;
 }
 
@@ -233,8 +233,6 @@ header {
   margin:0px;
   border-bottom:0px;
   border-radius:4px;
-}
-.header-right img {
 }
 
 .mainPoints {
@@ -393,7 +391,7 @@ button:active, .button:active {
 
 .index ticker {
   display:block;
-  margin:104px 0px;
+  margin:200px 0px 104px 0px;
 }
 
 .ticker-fadetrue, .ticker-fadefalse {
@@ -587,7 +585,7 @@ align-self: center;
   .work {
     max-width:1000px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px;
     grid-template-columns: [col1-start] 1fr  [col2-start] 2fr [col3-start] 2fr  [col3-end];
 //grid-auto-flow:dense;
   }
@@ -595,26 +593,28 @@ align-self: center;
 
   .work-intro {
     grid-column: col1-start / col3-start;
-    border:1px solid red;
+ border:1px solid red;
   }
 
   .work-skills {
     grid-column: col3-start / col3-end;
-    border:1px solid red;
+ border:1px solid red;
   }
 
   .work-section-headers {
-    grid-column: col2-start / col3-end;
-    border:1px solid red;
+    grid-column: col1-start / col2-start;
+    text-align:right;
+ border:1px solid red;
+    margin:0px;
   }
 
   .work-section-intro {
-    grid-column: col1-start / col2-start;
-    text-align:right;
-    border:1px solid red;
+    grid-column: col2-start / col3-end;
+ border:1px solid red;
   }
 
   .work-section-entry {
+ border:1px solid red;
   }
 
   .work-helper-span-2 {
@@ -622,6 +622,9 @@ align-self: center;
 }
   .work-helper-span-3 {
     grid-row-end: span 3
+}
+  .work-helper-span-4 {
+    grid-row-end: span 4
 }
 
 }

@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Particles from 'react-particles-js'
-import trump from "../images/trump.svg"
 import positive from "../images/neutral-face.svg"
 import neutral from "../images/sleeping-face.svg"
 import negative from "../images/frowning-face.svg"
@@ -169,12 +168,8 @@ const socialPage = () => (
   <li style={randomMargin()}><span>Good Reads</span></li>
   </ul>
   </div>
-  <div className="social-illustration">
-  <img src={trump} alt="bw photo of Donald Trum" />
-  </div>
   <div className="social-about">
-  <p>It feels like we are spending more and more time in an individualistic social media hallucination. Through that lens reality is no longer a shared experience. Instead it is warped to re-inforce and exploit our biases.</p>
-  <p>I try to limit my own exposure to the poisonous hallucination.</p>
+  <p>We are spending more and more time in an individualistic social media hallucination. Through that lens reality is no longer a shared experience. Instead it is warped to re-inforce and exploit our biases.</p>
   </div>
   </div>
   </Layout>

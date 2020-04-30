@@ -24,9 +24,6 @@ const Header = ({ siteTitle, pageTitle }) => (
   <Link to="/contact" >
   <img src={contactIcon} alt="speach bubbles" />
   </Link>
-  <Link to="/social" >
-  <img src={socialIcon} alt="sad face" />
-  </Link>
   </div>
   </header>
 )

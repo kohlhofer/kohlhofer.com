@@ -9,9 +9,7 @@ const Footer = () => (
   <div className="footer-sitemap">
     <h3>Navigation</h3>
   <ul>
-  <li><Link to="/work/">Product / Design</Link></li>
   <li><Link to="/music/1">Music</Link></li>
-  <li><Link to="/blog">Blog</Link></li>
   <li><Link to="/cv/">Curriculum Vitae</Link></li>
   <li><Link to="/social/">Social Media</Link></li>
   <li><Link to="/contact/">Contact</Link></li>
@@ -19,7 +17,7 @@ const Footer = () => (
   </div>
   <div className="footer-about">
     <h3>About this site</h3>
-  <p>Made with <a href="https://www.gatsbyjs.org" target="new">Gatsby.js</a> and continuously deployed via <a href="https://www.netlify.com" target="new">Netlify</a>. You can <a href="https://github.com/kohlhofer/kohlhofer.com" target="new">look at the code</a> or learn more about it in <Link to="/blog/2019-static-site">this blog post</Link>.</p>
+  <p>Made with <a href="https://www.gatsbyjs.org" target="new">Gatsby.js</a> and continuously deployed via <a href="https://www.netlify.com" target="new">Netlify</a>. You can <a href="https://github.com/kohlhofer/kohlhofer.com" target="new">look at the code</a>.</p>
   <p>Icons are <a href="https://zesticons.com" target="new">Zest Pro</a>. Illustrations are mostly by myself or vintage/creative commons.</p>
   </div>
   <div className="footer-copyright">
