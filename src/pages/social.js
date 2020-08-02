@@ -11,7 +11,7 @@ import negative from "../images/frowning-face.svg"
 
 
 function randomMargin() {
-  var maxSpacing = 15;
+  var maxSpacing = 12;
   var spacing = Math.floor(Math.random()*maxSpacing);
   return {marginLeft: spacing + 'px'};
 }
