@@ -21,7 +21,7 @@ export default function Template({ data }) {
         dangerouslySetInnerHTML={{ __html: html }}
       />
     <div className="blog-post-author">
-      <div>From Alexander Kohlhofer's <Link to="/blog">random journal</Link> about technology, design, music, and other things.</div>
+      <div>From Alexander Kohlhofer's <Link to="/blog">blog</Link> about technology, design, music, ...</div>
 <div><Link className="button" to="/blog">More articles</Link></div>
 </div>
     </div>

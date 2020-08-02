@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import contactIcon from "../images/message.svg"
 import socialIcon from "../images/cloud.svg"
+import homeIcon from "../images/circled-square.svg"
 
 
 function getPath(pageTitle) {
@@ -12,17 +13,17 @@ function getPath(pageTitle) {
 }
 
 const Header = ({ siteTitle, pageTitle }) => (
-  <header
-  >
-  <Link
-  to="/"
-  >
-  {siteTitle}
+  <header >
+  <Link to="/" >
+  <img src={homeIcon} alt="home icon" />
   </Link>
   {getPath(pageTitle)}
   <div className="header-right">
+  <Link to="/social" >
+  <img src={socialIcon} alt="social media" />
+  </Link>
   <Link to="/contact" >
-  <img src={contactIcon} alt="speach bubbles" />
+  <img src={contactIcon} alt="message" />
   </Link>
   </div>
   </header>

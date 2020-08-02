@@ -73,16 +73,6 @@ wrapper {
     grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
   }
 
-  .social-about {
-    grid-column: col2-start / col4-end;
-    grid-row: row2-start ;
-  }
-
-  .social-illustration {
-    grid-column: col4-start / col4-end;
-    grid-row: row2-start ;
-  }
-
 }
 
 
@@ -100,16 +90,6 @@ wrapper {
 .social-illustration img {
   width:100%;
   margin-top:40px;
-}
-
-.social h2 {
-  font-size:20px;
-  font-weight:400;
-  margin:0px 0px 0px 50px;
-  background-color:#FFA8E4;
-  padding:5px 8px;
-  color:#FFF88D;
-  border-radius:2px;
 }
 
 .social ul {
@@ -209,31 +189,36 @@ a {
 }
 
 header {
-  display:block;
   text-align:left;
   height:48px;
   line-height:48px;
-  margin:0px 16px 0px 16px;
+  margin:0px 10px 0px 10px;
   text-transform:uppercase;
+}
+
+header img {
+  vertical-align:middle;
 }
 
 .header-right {
   float:right;
-  margin-top:4px;
 }
 
 .header-path {
-  margin:0px 8px 0px 12px;
+  margin:0px 8px 0px 0px;
 }
 
-.header-right a {
-  display:inline-block;
-  line-height:8px;
+header a {
   padding:4px 8px;
-  margin:0px;
   border-bottom:0px;
   border-radius:4px;
 }
+
+header a:hover {
+    border-width:0px;
+    background-color:transparent;
+}
+
 
 .mainPoints {
   list-style:none;
@@ -553,78 +538,5 @@ align-self: center;
     border-left:1px solid rgba(0,0,0,0.2);
     padding: 0px 0px 0px 20px;
   }
-
-}
-
-.work {
-  margin:40px auto;
-}
-
-.work-skills {
-  margin:0px;
-}
-.work-intro {
-  font-size:40px;
-  line-height:56px;
-  font-weight:200;
-  margin-bottom:30px;
-}
-
-.work-section-headers {
-  font-weight:700;
-  font-size:20px;
-  line-height:32px;
-  margin:40px 0px 0px 0px;
-  }
-
-.work-section-intro {
-  font-weight:200;
-}
-
-@media only screen and (min-width: 700px) {
-  .work {
-    max-width:1000px;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: [col1-start] 1fr  [col2-start] 2fr [col3-start] 2fr  [col3-end];
-//grid-auto-flow:dense;
-  }
-
-
-  .work-intro {
-    grid-column: col1-start / col3-start;
- border:1px solid red;
-  }
-
-  .work-skills {
-    grid-column: col3-start / col3-end;
- border:1px solid red;
-  }
-
-  .work-section-headers {
-    grid-column: col1-start / col2-start;
-    text-align:right;
- border:1px solid red;
-    margin:0px;
-  }
-
-  .work-section-intro {
-    grid-column: col2-start / col3-end;
- border:1px solid red;
-  }
-
-  .work-section-entry {
- border:1px solid red;
-  }
-
-  .work-helper-span-2 {
-    grid-row-end: span 2
-}
-  .work-helper-span-3 {
-    grid-row-end: span 3
-}
-  .work-helper-span-4 {
-    grid-row-end: span 4
-}
 
 }

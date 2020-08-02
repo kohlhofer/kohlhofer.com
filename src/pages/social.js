@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Particles from 'react-particles-js'
-import positive from "../images/neutral-face.svg"
+import positive from "../images/grinning-face.svg"
 import neutral from "../images/sleeping-face.svg"
 import negative from "../images/frowning-face.svg"
 
@@ -138,16 +138,14 @@ const socialPage = () => (
 <div className="social">
   <div className="social-active">
   <img className="social-sentiment" src={positive} alt="check mark" />
-  <h2>Actively engaged:</h2>
   <ul>
+  <li style={randomMargin()}><span><a href="https://www.instagram.com/kohlhofer/">Instagram</a></span></li>
   <li style={randomMargin()}><span><a href="https://www.chess.com/member/kohlhofer">Chess.com</a></span></li>
   </ul>
   </div>
   <div className="social-passive">
   <img className="social-sentiment" src={neutral} alt="neutral face" />
-  <h2>Sporadic use:</h2>
   <ul>
-  <li style={randomMargin()}><span><a href="https://www.instagram.com/kohlhofer/">Instagram</a></span></li>
   <li style={randomMargin()}><span><a href="https://www.youtube.com/channel/UC8MQAg5u5t1KpxdutBW40Yg">Youtube</a></span></li>
   <li style={randomMargin()}><span><a href="https://www.linkedin.com/in/kohlhofer/">LinkedIn</a></span></li>
   <li style={randomMargin()}><span><a href="https://soundcloud.com/kohlhofer_music">Soundcloud</a></span></li>
@@ -156,7 +154,6 @@ const socialPage = () => (
   </div>
   <div className="social-dead">
   <img className="social-sentiment" src={negative} alt="frowning face" />
-  <h2>Stale or account deleted:</h2>
   <ul>
   <li style={randomMargin()}><span>Facebook</span></li>
   <li style={randomMargin()}><span><a href="https://twitter.com/kohlhofer">Twitter</a></span></li>
@@ -167,9 +164,6 @@ const socialPage = () => (
   <li style={randomMargin()}><span>Pinterrest</span></li>
   <li style={randomMargin()}><span>Good Reads</span></li>
   </ul>
-  </div>
-  <div className="social-about">
-  <p>We are spending more and more time in an individualistic social media hallucination. Through that lens reality is no longer a shared experience. Instead it is warped to re-inforce and exploit our biases.</p>
   </div>
   </div>
   </Layout>
