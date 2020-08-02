@@ -9,41 +9,32 @@
 const path = require(`path`)
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
-  const musicVideos = [
-    { title: "Jamuary2018 Day 8", youTubeId: "7MWWRs_Nyj8"},
-    { title: "Patch with newly added XAOC Tallin and Zvex Instant Lo-Fi Junky", youTubeId: "RQ5jpYfPGdk"},
-    { title: "Woke", youTubeId: "1PypZeYPYcI"},
-    { title: "Iconic Genes", youTubeId: "_dkO3dsNYdw"},
-    { title: "Delta Eurorack Patch", youTubeId: "3yvZve8e9do"},
-    { title: "Steady State Lost", youTubeId: "X82w64tnqlk"},
-    { title: "1974", youTubeId: "ev5zKEGVsmA"},
-    { title: "Krell Train (a generative modular synth patch)", youTubeId: "AHxWRgoGI-w"},
-    { title: "Magnetic", youTubeId: "JKPPnTaV6Bo"},
-    { title: "Lazy Daze", youTubeId: "BEaoNRfiHbs"},
-    { title: "Asedo - tape based generative ambient eurorack patch", youTubeId: "MgxXnnZYWEY"},
-    { title: "Habits", youTubeId: "noHfg_qJQ5o"},
-    { title: "Fragments – a morphagene composition with piano", youTubeId: "qZ5WHedzeZg"},
-    { title: "Lines (MengQi) with little visitors", youTubeId: "E75kOhOginY"},
-    { title: "Findus", youTubeId: "gsLNknKpgA0"},
-    { title: "Everything has changed", youTubeId: "8NruWzs6MKE"},
-    { title: "Clutter - a fully generative Eurorack Patch", youTubeId: "TCl5bcWLIPI"},
-    { title: "Last day (12/31/2017)", youTubeId: "dOJfqd_Fqg0"}
+  const episodes = [
+    { title: "Episode #4", description: "7MWWRs_Nyj8", file: "coolfile"},
+    { title: "Episode #3", description: "7MWWRs_Nyj8", file: "coolfile"},
+    { title: "Episode #2", description: "7MWWRs_Nyj8", file: "coolfile"},
+    { title: "Episode #1", description: "7MWWRs_Nyj8", file: "coolfile"}
   ]
 
-  // Music videos  
+  // Music podcast  
   count = 0;
-  musicVideos.forEach(musicVideo => {
+  episodes.forEach(episode => {
     count++;
-    musicVideo.path = count;
-    if (musicVideos.length > count) {
-    	musicVideo.next = count + 1;
+    episode.path = count;
+    if (episodes.length > count) {
+    	episode.previous = count + 1;
     } else {
-    	musicVideo.next = 1;
+    	episode.previous = 1;
+    }
+    if (count > 1) {
+        episode.next = count - 1;
+    } else {
+        episode.next = episodes.length;
     }
     createPage({
-      path: `/music/${musicVideo.path}/`,
-      component: require.resolve("./src/templates/video.js"),
-      context: { musicVideo },
+      path: `/podcast/${episode.path}/`,
+      component: require.resolve("./src/templates/episode.js"),
+      context: { episode },
     })
   })
 

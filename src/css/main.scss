@@ -109,71 +109,6 @@ wrapper {
   border-radius:2px;
 }
 
-.music {
-  margin:0px auto;
-}
-
-.music-wrapper {
-  background-color:#000;
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8183648459383753) 100%);
-margin: 0px -40px;
-  padding:32px 0px 24px;
-}
-
-.music-control {
-  text-align:center;
-  margin-bottom:32px;
-}
-
-.music-title {
-  font-size:16px;
-  line-height:24px;;
-  font-style:italic;
-}
-
-@media only screen and (min-width: 700px) {
-  .music {
-    max-width:800px;
-    text-align:left;
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr  [col3-end];
-    grid-template-rows: [row1-start] auto [row1-end];
-  }
-
-  .music-video {
-    grid-column: col1-start / col3-end;
-    grid-row: row1-start ;
-  }
-
-  .music-illustration {
-    grid-column: col1-start / col3-end;
-    grid-row: row2-start ;
-  }
-
-}
-
-.music-about{
-  font-weight:200;
-}
-
-.music-video {
-  text-align:center;
-}
-.videoPlayer {
-}
-
-.videoPlayer iframe, .videoPlayer  object, .videoPlayer  embed {
-  max-width:100%;
-}
-
-
-.music-illustration {
-  text-align:center;
-  display:block;
-  margin:48px auto 0px;
-}
-
 a {
   text-decoration:none;
   border-bottom:1px solid rgba(0,0,0,0.4);
@@ -465,7 +400,6 @@ place-self: center stretch;
 
 
 
-
 .blog-post {
   margin:80px auto;
 }
@@ -537,3 +471,61 @@ align-self: center;
   }
 
 }
+
+// podcast
+
+  .episode-podcast {
+    text-align:center;
+  }
+
+  .episode-tape {
+    text-align:center;
+  }
+
+  .episode-details {
+    text-align:center;
+  }
+
+@media only screen and (min-width: 700px) {
+  .episode {
+    max-width:1000px;
+    margin:0px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: [col1-start] 1fr  [col2-start] 4fr  [col3-start] 1fr [col3-end]; 
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  }
+
+  .episode-podcast {
+    grid-row: row1-start;
+    grid-column: col2-start / col3-start;
+  }
+
+  .episode-next {
+    grid-row: row2-start;
+    grid-column: col1-start / col2-start;
+    text-align:left;
+  }
+
+  .episode-previous {
+    grid-row: row2-start;
+    grid-column: col3-start / col3-end;
+    text-align:right;
+  }
+
+  .episode-tape {
+    grid-row: row2-start;
+    grid-column: col2-start / col3-start;
+  }
+  
+  .episode-details {
+    grid-row: row3-start;
+    grid-column: col2-start / col3-start;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+
+}
+
