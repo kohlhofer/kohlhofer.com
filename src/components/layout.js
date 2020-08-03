@@ -15,7 +15,14 @@ import Footer from "./footer"
 import SEO from "./seo"
 import "../css/index.scss"
 
-const Layout = ({ children,pageTitle,color }) => {
+
+function setBodyClass(newClass) {
+  if (newClass) {
+    document.body.className = newClass;
+  }
+}
+
+const Layout = ({ children,pageTitle,color, hideFooter }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,12 +33,14 @@ const Layout = ({ children,pageTitle,color }) => {
     }
   `)
 
+  setBodyClass(color)
+
   return (
-    <div className={'wrapper '+color}>
+    <div className="wrapper">
     <SEO title={pageTitle} />
     <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
     <main className="content">{children}</main>
-    <Footer />
+{!hideFooter? <Footer /> : ""}
     </div>
   )
 }
@@ -39,12 +48,12 @@ const Layout = ({ children,pageTitle,color }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   pageTitle: PropTypes.string,
+  footer: PropTypes.string,
   color: PropTypes.string
 }
 
 
 Layout.defaultProps = {
-  color: "purple"
 }
 
 export default Layout

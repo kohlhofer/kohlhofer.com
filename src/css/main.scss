@@ -19,45 +19,6 @@ wrapper {
   text-align:left;
 }
 
-.index-back {
-  background:
-  url("../images/gradient.svg")
-  center -550px / 7100px /* position / size */
-  no-repeat                /* repeat */
-  scroll                    /* attachment */
-  border-box              /* origin */
-  content-box              /* clip */
-  #9FFFBF;
-
-  animation: colorchange 100s infinite;
-  @keyframes colorchange
-  {
-    0%   {background-color: #9FFFBF;}
-    33%  {background-color: #FFA8E4;}
-    66% {background-color: #85E3FF;}
-    100% {background-color: #9FFFBF;}
-  }
-
-}
-.purple {
-  background-color:#FFA8E4;
-}
-.grey {
-  background-color:#E5E5E5;
-}
-.blue {
-  background-color:#85E3FF;
-}
-.grass-green {
-  background-color:#CDFB96;
-}
-.yellow {
-  background-color:#FFF88D;
-}
-.blue-green {
-  background-color:#9FFFBF;
-}
-
 .social {
   margin:40px auto;
   text-align:left;
@@ -505,12 +466,14 @@ align-self: center;
     grid-row: row2-start;
     grid-column: col1-start / col2-start;
     text-align:left;
+    align-self: center;
   }
 
   .episode-previous {
     grid-row: row2-start;
     grid-column: col3-start / col3-end;
     text-align:right;
+    align-self: center;
   }
 
   .episode-tape {

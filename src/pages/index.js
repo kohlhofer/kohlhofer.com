@@ -4,7 +4,7 @@ import Ticker from "../components/ticker"
 import Layout from "../components/layout"
 
 const IndexPage = () => (
-  <Layout pageTitle="Welcome" color="index-back">
+  <Layout pageTitle="Welcome" color="index-back" hideFooter="true">
   <div className="index">
   <ul className="mainPoints">
   <li><Link to="/podcast/1">Music</Link></li>
