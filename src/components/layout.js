@@ -12,15 +12,10 @@ import { Link } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
+import Helmet from "react-helmet"
 import SEO from "./seo"
 import "../css/index.scss"
 
-
-function setBodyClass(newClass) {
-  if (newClass) {
-    document.body.className = newClass;
-  }
-}
 
 const Layout = ({ children,pageTitle,color, hideFooter }) => {
   const data = useStaticQuery(graphql`
@@ -33,10 +28,14 @@ const Layout = ({ children,pageTitle,color, hideFooter }) => {
     }
   `)
 
-  setBodyClass(color)
 
   return (
     <div>
+<Helmet
+    bodyAttributes={{
+        class: color
+    }}
+/>
     <SEO title={pageTitle} />
     <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
     <main className="content">{children}</main>
