@@ -1,0 +1,31 @@
+.SignupForm {
+    margin:0px auto;
+    display:inline-block;
+    text-align:center;
+  }
+  .SignupForm p {
+    margin:0.5em;
+    font-size:0.9em;
+  }
+  .SignupForm .Wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow:hidden;
+  }
+  .SignupForm input {
+    width: 75%;
+    border: none;
+  }
+  .SignupForm button, .SignupForm input {
+    padding: 0.3rem 0.5em;
+  }
+  .SignupForm button {
+    display: inline-block;
+    border: none;
+    background-color: rgb(0, 122, 204);
+    color: white;
+    transition: all 0.1s linear;
+  }
+  .SignupForm button:hover {
+    cursor: pointer;
+  }

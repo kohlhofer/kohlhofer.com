@@ -7,12 +7,6 @@ body {
   background-color:#000;
 }
 
-wrapper {
-  text-align:center;
-  margin:0px;
-  padding:0px;
-  min-height:100vh;
-}
 
 .content {
   margin:0px 40px;
@@ -435,7 +429,7 @@ align-self: center;
 
 // podcast
 
-  .episode-podcast {
+  .episode-intro {
     text-align:center;
   }
 
@@ -445,6 +439,10 @@ align-self: center;
 
   .episode-details {
     text-align:center;
+  }
+
+  .episode .SignupForm {
+    margin-top:50px;
   }
 
 @media only screen and (min-width: 700px) {
@@ -457,7 +455,7 @@ align-self: center;
     grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
   }
 
-  .episode-podcast {
+  .episode-intro {
     grid-row: row1-start;
     grid-column: col2-start / col3-start;
   }

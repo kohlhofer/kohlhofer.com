@@ -36,11 +36,11 @@ const Layout = ({ children,pageTitle,color, hideFooter }) => {
   setBodyClass(color)
 
   return (
-    <div className="wrapper">
+    <div>
     <SEO title={pageTitle} />
     <Header siteTitle={data.site.siteMetadata.title} pageTitle={pageTitle} />
     <main className="content">{children}</main>
-{!hideFooter? <Footer /> : ""}
+    {!hideFooter? <Footer /> : ""}
     </div>
   )
 }

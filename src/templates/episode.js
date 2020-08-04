@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import SignupForm from "../components/signup-form"
 import AudioPlayer from "../components/audioPlayer"
 import SEO from "../components/seo"
 import left from "../images/circled-left-arrow.svg"
@@ -12,7 +13,9 @@ export default ({ pageContext: { episode } }) => (
   <Layout pageTitle="Podcast" color="purple" hideFooter="true">
   <SEO title={episode.title} />
   <div className="episode"> 
-  <h1 className="episode-podcast">Cool Podcast</h1>
+  <div className="episode-intro">
+    <h1>Cool Podcast</h1>
+  </div>
 <div className="episode-next">
   <Link to={"/podcast/"+episode.next} className="button"><img src={left} className="" alt="left arrow" /></Link></div>
 <div className="episode-previous">
@@ -24,6 +27,7 @@ export default ({ pageContext: { episode } }) => (
     <h2 className="episode-title">{episode.title}</h2>
     <p className="episode-description">{episode.description}</p>
     <AudioPlayer file={episode.file}></AudioPlayer>
+    <SignupForm/>
   </div>
   </div>
   </Layout>
