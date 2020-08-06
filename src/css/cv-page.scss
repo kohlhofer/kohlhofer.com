@@ -1,0 +1,53 @@
+
+  .cvPage {
+    margin:80px auto;
+  }
+
+  .cvPage-cv{
+  }
+
+  .cvPage-illu {
+    margin-bottom:40px;
+    text-align:center;
+  }
+
+  .cvPage ul {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+  }
+
+  .cvPage li {
+    margin-bottom:30px;
+  }
+
+@media only screen and (min-width: 600px) {
+  .cvPage {
+    max-width:800px;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: [col1-start] 2fr  [col2-start] 3fr  [col2-end];
+    grid-template-rows: [row1-start] auto [row1-end];
+  }
+
+  .cvPage-illu {
+    grid-row: row1-start ;
+    grid-column: col1-start / col2-start;
+  }
+
+  .cvPage-cv{
+    grid-row: row1-start ;
+    grid-column: col2-start / col2-end;
+  }
+
+}
+
+.cvPage img {
+  vertical-align:middle;
+  margin-bottom:40px;
+  max-width:100%;
+}
+
+.cvPage a {
+}
+
