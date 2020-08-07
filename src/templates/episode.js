@@ -10,11 +10,12 @@ import right from "../images/circled-right-arrow.svg"
 import tape from "../images/tapeanim.gif"
 
 export default ({ pageContext: { episode } }) => (
-  <Layout pageTitle="Podcast" color="purple" hideFooter="true">
+  <Layout pageTitle="Taint of Vitalism" color={episode.bg} hideFooter="true">
   <SEO title={episode.title} />
   <div className="episode"> 
   <div className="episode-intro">
-    <h1>Cool Podcast</h1>
+    <h1>Taint of Vitalism</h1>
+    <p>This is the thing...</p>
   </div>
 <div className="episode-next">
   <Link to={"/podcast/"+episode.next} className="button"><img src={left} className="" alt="left arrow" /></Link></div>

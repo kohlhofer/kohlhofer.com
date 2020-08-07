@@ -31,6 +31,7 @@ const Layout = ({ children,pageTitle,color, hideFooter }) => {
 
   return (
     <div>
+  <div className="grain" />
 <Helmet
     bodyAttributes={{
         class: color
