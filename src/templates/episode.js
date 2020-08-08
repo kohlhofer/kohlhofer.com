@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import left from "../images/circled-left-arrow.svg"
 import right from "../images/circled-right-arrow.svg"
 import tape from "../images/tape.svg"
+import reel from "../images/reel.svg"
+
 
 export default ({ pageContext: { episode } }) => (
   <Layout pageTitle="Taint of Vitalism" color={episode.bg} hideFooter="true">
@@ -22,10 +24,14 @@ export default ({ pageContext: { episode } }) => (
 <div className="episode-previous">
   <Link to={"/podcast/"+episode.previous} className="button"><img src={right} className="" alt="right arrow" /></Link></div>
   <div className="episode-tape">
-  <img src={tape} className="" alt="tape placeholder" width="400px" />
+  <div className="tape">
+  <h2 className="tape-label">ToV / {episode.title}</h2>
+  <img src={tape} className="tape-cover" alt="tape" />
+  <img src={reel} className="tape-reelA" alt="tape reel" />
+  <img src={reel} className="tape-reelB" alt="tape reel" />
+  </div>
   </div>
   <div className="episode-details">
-    <h2 className="episode-title">{episode.title}</h2>
     <p className="episode-description">{episode.description}</p>
     <AudioPlayer file={episode.file}></AudioPlayer>
     <SignupForm/>

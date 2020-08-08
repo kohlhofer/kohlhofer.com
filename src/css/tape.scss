@@ -1,0 +1,37 @@
+.tape {
+  position:relative;
+  width:350px;
+  margin:0px auto;
+}
+
+.tape-cover {
+  width:350px;
+}
+
+.tape-label {
+ position:absolute;
+ margin:0px;
+ width:100%;
+ top:27px;
+ font-family: "PermanentMarker", sans-serif;
+ font-size:16px;
+}
+
+.tape-reelA {
+ position: absolute;
+ width:40px;
+ left:83px;
+ top:77px;
+ animation:spin 1.5s linear infinite;
+  z-index:-1;
+}
+
+.tape-reelB {
+ position: absolute;
+ width:40px;
+ right:83px;
+ top:77px;
+ animation:spin 1s linear infinite;
+  z-index:-1;
+}
+@keyframes spin { 100% { transform:rotate(-60deg); } }
