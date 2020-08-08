@@ -7,7 +7,7 @@ import AudioPlayer from "../components/audioPlayer"
 import SEO from "../components/seo"
 import left from "../images/circled-left-arrow.svg"
 import right from "../images/circled-right-arrow.svg"
-import tape from "../images/tapeanim.gif"
+import tape from "../images/tape.svg"
 
 export default ({ pageContext: { episode } }) => (
   <Layout pageTitle="Taint of Vitalism" color={episode.bg} hideFooter="true">
