@@ -9,7 +9,7 @@ const Footer = () => (
   <div className="footer-sitemap">
     <h3>Navigation</h3>
   <ul>
-  <li><Link to="/podcast/1">Taint of Vitalism</Link></li>
+  <li><Link to="/podcast/1">Tannhäuser Gates</Link></li>
   <li><Link to="/blog">Blog</Link></li>
   <li><Link to="/cv/">Curriculum Vitae</Link></li>
   <li><Link to="/social/">Social Media</Link></li>

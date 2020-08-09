@@ -1,10 +1,15 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
   font-family: "SourceSansPro", sans-serif;
   font-weight: 400;
   font-size:20px;
   color:rgba(0,0,0,0.8);
   line-height:32px;
-  background-color:#000;
+  min-height:100%;
 }
 
 
@@ -149,16 +154,12 @@ header a:hover {
   margin:0px auto 35px;
 }
 
-.contact hr { 
-  border:1px solid rgba(0,0,0,0.8);
-  width:100px;
-  margin:48px auto;
-}
 
 
 
 form {
   text-align:left;
+  margin-bottom:60px;
 }
 
 .form-hidden {
@@ -224,7 +225,7 @@ button:active, .button:active {
 
 @media only screen and (min-width: 700px) {
   .index {
-    max-width:950px;
+    max-width:850px;
     display: grid;
     grid-gap: 0px;
     grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col2-end];

@@ -10,14 +10,14 @@ const path = require(`path`)
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const episodes = [
-    { title: "Episode #3", description: "Break", file: "/audio/break.mp3", bg: "purple"},
-    { title: "Episode #2", description: "Awaiting Drezno", file: "/audio/awaiting-drezno.mp3", bg: "blue"}, { title: "Episode #1", description: "Magentic Rainbow test", file: "/audio/magnetic-rainbow.mp3", bg: "grass-green"}
+    { title: "Episode #3", description: "Break", file: "/audio/break.mp3"},
+    { title: "Episode #2", description: "Awaiting Drezno", file: "/audio/awaiting-drezno.mp3"}, { title: "Episode #1", description: "Magentic Rainbow test", file: "/audio/magnetic-rainbow.mp3"}
   ]
 
   // Music podcast  
-  count = 0;
+  count = episodes.length+1;
   episodes.forEach(episode => {
-    count++;
+    count--;
     episode.path = count;
     if (episodes.length > count) {
     	episode.previous = count + 1;

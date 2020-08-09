@@ -5,14 +5,9 @@
     text-align:center;
   }
 
-  .episode-intro h1 {
-    font-weight:400;
-    font-size:1.3em;
-    margin:0.3em 0px;
-  }
 
   .episode-intro {
-    margin:0px 0px 30px 0px;
+    margin:20px 0px 40px 0px;
   }
 
   .episode-intro p {
@@ -68,7 +63,7 @@
     grid-row: row1-start;
     grid-column: col2-start / col3-start;
   }
-  .episode .SignupForm {
+  .episode .subscribe {
     grid-row: row4-start;
     grid-column: col2-start / col3-start;
   }
@@ -78,6 +73,7 @@
     grid-column: col1-start / col2-start;
     text-align:left;
     align-self: center;
+    justify-self: end;
   }
 
   .episode-previous {
@@ -85,6 +81,7 @@
     grid-column: col3-start / col3-end;
     text-align:right;
     align-self: center;
+    justify-self: start;
   }
 
   .episode-tape {

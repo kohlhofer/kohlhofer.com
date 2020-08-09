@@ -26,7 +26,6 @@ const contactPage = () => (
   <button type="submit">Send message</button> 
   </p>
   </form> 
-  <hr />
   <div className="contact-words">
   <p>Get in touch to talk product, design, music, or anything.</p>
   <p>I have extensive experience working and collaborating remotely. So far I have lived and worked in the US, the UK, Austria, and Germany.</p>

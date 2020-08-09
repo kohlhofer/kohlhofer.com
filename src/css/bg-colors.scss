@@ -2,7 +2,7 @@
 .index-back {
   background:
   url("../images/gradient.svg")
-  center -550px / 7100px /* position / size */
+  center -520px / 7100px /* position / size */
   no-repeat                /* repeat */
   scroll                    /* attachment */
   border-box              /* origin */
@@ -36,4 +36,37 @@
 }
 .blue-green {
   background-color:#9FFFBF;
+}
+.tape1 {
+  background-image:
+    linear-gradient(
+      rgba(255,200,255,0.9),
+      rgba(255,255,200,0.7)
+    ),
+      url("../images/beach.jpg");
+
+      background-size:cover;
+      background-attachment: fixed;
+}
+.tape2 {
+  background-image:
+    linear-gradient(
+      rgba(150,200,255,0.8),
+      rgba(255,200,255,0.7)
+    ),
+      url("../images/hotel.jpg");
+
+      background-size:cover;
+      background-attachment: fixed;
+}
+.tape3 {
+  background-image:
+    linear-gradient(
+      rgba(255,200,150,0.6),
+      rgba(150,100,255,0.8)
+    ),
+      url("../images/skyline.jpg");
+
+      background-size:cover;
+      background-attachment: fixed;
 }
