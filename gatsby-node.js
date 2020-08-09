@@ -10,8 +10,9 @@ const path = require(`path`)
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const episodes = [
-    { title: "Episode #3", description: "Break", file: "/audio/break.mp3"},
-    { title: "Episode #2", description: "Awaiting Drezno", file: "/audio/awaiting-drezno.mp3"}, { title: "Episode #1", description: "Magentic Rainbow test", file: "/audio/magnetic-rainbow.mp3"}
+    { title: "Episode #3", description: "Break", file: "/audio/break.mp3", cover: 1, background: 1},
+    { title: "Episode #2", description: "Awaiting Drezno", file: "/audio/awaiting-drezno.mp3", cover: 2, background: 2}, 
+    { title: "Episode #1", description: "Magentic Rainbow test", file: "/audio/magnetic-rainbow.mp3", cover: 3, background: 3}
   ]
 
   // Music podcast  
