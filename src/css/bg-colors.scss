@@ -43,9 +43,9 @@
       rgba(255,200,255,0.9),
       rgba(255,255,200,0.7)
     ),
-      url("../images/beach.jpg");
+      url("../images/patterns/doodles.png");
 
-      background-size:cover;
+      background-size:cover, repeat;
       background-attachment: fixed;
 }
 .tape2 {
@@ -54,19 +54,19 @@
       rgba(150,200,255,0.8),
       rgba(255,200,255,0.7)
     ),
-      url("../images/hotel.jpg");
+      url("../images/patterns/funky-lines.png");
 
-      background-size:cover;
+      background-size:cover, repeat;
       background-attachment: fixed;
 }
 .tape3 {
   background-image:
     linear-gradient(
-      rgba(255,200,150,0.6),
-      rgba(150,100,255,0.8)
+      rgba(255,200,150,0.5),
+      rgba(150,100,255,0.7)
     ),
-      url("../images/skyline.jpg");
+      url("../images/patterns/arches.png");
 
-      background-size:cover;
+      background-size:cover, repeat;
       background-attachment: fixed;
 }

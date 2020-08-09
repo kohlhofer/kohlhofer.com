@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Particles from 'react-particles-js'
+import "../css/particles.scss"
 import positive from "../images/grinning-face.svg"
 import neutral from "../images/sleeping-face.svg"
 import negative from "../images/frowning-face.svg"

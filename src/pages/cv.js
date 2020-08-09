@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import brain from "../images/brain.png"
+import "../css/cv-page.scss"
 
 const cvPage = () => (
   <Layout pageTitle="Curriculum Vitae" color="grey">

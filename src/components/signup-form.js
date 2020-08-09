@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/signup-form.scss"
 
 const handleSubmit = e => {
   window.open(

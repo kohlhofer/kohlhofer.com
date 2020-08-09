@@ -4,27 +4,24 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SignupForm from "../components/signup-form"
 import AudioPlayer from "../components/audioPlayer"
+import Cassette from "../components/cassette"
 import SEO from "../components/seo"
 import left from "../images/left-chevron.svg"
 import right from "../images/right-chevron.svg"
 import tape from "../images/tape.svg"
 import reel from "../images/reel.svg"
+import "../css/music-page.scss"
 
 
 export default ({ pageContext: { episode } }) => (
-  <Layout pageTitle={"Tannhäuser Gates / "+ episode.title} color={"tape"+episode.path} hideFooter="true">
+  <Layout pageTitle={"Tannhäuser Gates #"+ episode.path} color={"tape"+episode.path} hideFooter="true">
   <SEO title={episode.title} />
   <div className="episode"> 
   <div className="episode-intro">
     <p>Tannhäuser Gates is a series of mixes featuring electronic and experimental music. Listen right here or get it on youTube, iTunes, or your favorite podcast outlet.</p>
   </div>
   <div className="episode-tape">
-  <div className="tape">
-  <h1 className="tape-label">TG / {episode.title}</h1>
-  <img src={tape} className="tape-cover" alt="tape" />
-  <img src={reel} className="tape-reelA" alt="tape reel" />
-  <img src={reel} className="tape-reelB" alt="tape reel" />
-  </div>
+    <Cassette label={episode.title} />
   </div>
   <div className="episode-details">
     <p className="episode-description">{episode.description}</p>
