@@ -19,7 +19,7 @@ export default ({ pageContext: { episode } }) => (
     <p>Tannhäuser Gates is a series of mixes featuring electronic and experimental music. Listen right here or get it on youTube, iTunes, or your favorite podcast outlet.</p>
   </div>
   <div className="episode-tape">
-    <Cassette label={episode.title} cover={episode.cover} />
+    <Cassette label={"TG / " + episode.title} cover={episode.cover} />
   </div>
   <div className="episode-details">
     <p className="episode-description">{episode.description}</p>

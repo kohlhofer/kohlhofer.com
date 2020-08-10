@@ -37,6 +37,14 @@
 .blue-green {
   background-color:#9FFFBF;
 }
+.tapes {
+  background: repeating-linear-gradient(
+  to right,
+  #F7F0D9,
+  #F7F0D9 20px,
+  #FADDF6 20px,
+  #FADDF6 40px
+);}
 .tape1 {
   background-image:
     linear-gradient(

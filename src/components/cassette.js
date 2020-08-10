@@ -36,7 +36,7 @@ class Cassette extends Component {
   render() {
     return(
   <div className="tape">
-  <h1 className="tape-label">TG / {this.props.label}</h1>
+  <h1 className="tape-label">{this.props.label}</h1>
   <img src={this.getCover(this.props.cover)} className="tape-cover" alt="tape" />
   <img src={reel} className="tape-reelA" alt="tape reel" />
   <img src={reel} className="tape-reelB" alt="tape reel" />
