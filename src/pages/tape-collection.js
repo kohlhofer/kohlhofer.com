@@ -6,10 +6,10 @@ import Cassette from "../components/cassette"
 import "../css/tape-collection.scss"
 
 const tapePage = () => (
-  <Layout pageTitle="Tape Designs" color="tapes">
+  <Layout pageTitle="Tape Collection" color="tapes">
   <div className="tapePage">
     <div className="tapePage-intro">
-<p>I support small electronic artists by buying and listening to their releases on cassette tapes. And now I have a blast designing these tapes for my own <Link to="/podcast/1">Tannhäuser Gates</Link>.</p>
+<p>I support independent electronic musicians by buying and listening to their releases on cassette tapes. These illustrations of vintage tapes are for my own ongoing series <Link to="/podcast/1">Tannhäuser Gates</Link>.</p>
     </div>
     <div className="single-tape">
     <Cassette label="Awesome Mixtape #1" cover="1" />

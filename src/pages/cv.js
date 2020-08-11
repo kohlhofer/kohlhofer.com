@@ -13,9 +13,9 @@ const cvPage = () => (
     <a className="button" href="https://www.linkedin.com/in/kohlhofer">View on LinkedIn</a>
   </div>
   <div className="cvPage-cv">
-  <ul>
+  <ol>
   <li>Since 2019 <b>I lead the design team at CloudBees</b> working directly for the CPO.</li>
-  <li><b>I led the product and design teams at UserVoice,</b> the leader in product feedback management used by MSFT, Adobe, Google, Box, Cisco, etc. I oversaw the evolution of the product by enriching customer data and adding subsequent data analysis and segmentation capabilities. This was key for aggregating and translating huge amounts of qualitative data into actionable realtime product insights. New integrations captured indirect feedback data from customer facing teams (support, sales, success, etc) providing 360 degree coverage. Working with the other leaders we more than doubled ARR and more than tripled ASP during my tenure.</li>
+  <li><b>I led the product and design teams at UserVoice,</b> the leader in customer feedback management trusted by MSFT, Adobe, Google, Box, Cisco, etc. I oversaw the evolution of the product by enriching customer data and adding subsequent data analysis and segmentation capabilities that are key for aggregating and translating huge amounts of qualitative data into actionable realtime product insights. Integrations captured indirect feedback data from customer facing teams (support, sales, success, etc). Working with the other leaders we more than doubled ARR and more than tripled ASP during my tenure.</li>
   <li>At Electronic Arts I wore various hats while we grew the small studio EA2D from 6 to ~40 people. Eventually <b>I oversaw the integration into acclaimed BioWare as the interim Studio Manager</b> with 35 direct and indirect reports. Among other things I led the technology team that enabled EA to become a launch partner for Google's google+ gaming platform (This was exciting work even if ultimately doomed).</li>
   <li><b>Presented at Towards a Citizens Media Conference in Pakistan.</b></li>
   <li><b>I created the award winning online multiplayer strategy game Weewar.</b> Electronic Arts acquired the game and its online community of players from me after less than 2 years. After this exit I relocated to San Francisco, CA to join Electronic Arts at their headquarters.</li>
@@ -26,7 +26,7 @@ const cvPage = () => (
   <li>
   <b>Founded Schöne neue Kinder Design Büro</b>. We managed to quickly attract a high profile client base. My co-founders are still active. At the time of writing (2020) the first company I helped start has over 100 employees and offices in multiple countries.  
   </li>
-  </ul>
+  </ol>
   </div>
   </div>
   </Layout>

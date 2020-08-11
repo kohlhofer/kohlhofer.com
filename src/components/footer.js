@@ -19,8 +19,8 @@ const Footer = () => (
   </div>
   <div className="footer-about">
     <h3>About this site</h3>
+  <p>Illustrations are mostly by myself (e.g. the <Link to="/tape-collection/">tape collection</Link>) or vintage/creative commons. Icons are <a href="https://zesticons.com" target="new">Zest Pro</a>.</p>
   <p>Made with <a href="https://www.gatsbyjs.org" target="new">Gatsby.js</a> and continuously deployed via <a href="https://www.netlify.com" target="new">Netlify</a>. You can <a href="https://github.com/kohlhofer/kohlhofer.com" target="new">look at the code</a>.</p>
-  <p>Icons are <a href="https://zesticons.com" target="new">Zest Pro</a>. Illustrations are mostly by myself (e.g. <Link to="/tape-collection/">Tapes</Link>) or vintage/creative commons.</p>
   </div>
   <div className="footer-copyright">
     <h3>Small print</h3>

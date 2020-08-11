@@ -12,7 +12,7 @@ import "../css/music-page.scss"
 
 
 export default ({ pageContext: { episode } }) => (
-  <Layout pageTitle={"Tannhäuser Gates #"+ episode.path} color={"tape"+episode.background} hideFooter="true">
+  <Layout pageTitle={"Tannhäuser Gates #"+ episode.path} color={"tape"+episode.background}>
   <SEO title={episode.title} />
   <div className="episode"> 
   <div className="episode-intro">

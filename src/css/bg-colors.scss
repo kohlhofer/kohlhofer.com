@@ -44,14 +44,16 @@
   #F7F0D9 20px,
   #FADDF6 20px,
   #FADDF6 40px
-);}
+);
+
+}
 .tape1 {
   background-image:
     linear-gradient(
-      rgba(255,200,255,0.9),
-      rgba(255,255,200,0.7)
+      rgba(255,150,255,0.5),
+      rgba(255,255,200,0.6)
     ),
-      url("../images/patterns/doodles.png");
+      url("../images/patterns/triangle-mosaic.png");
 
       background-size:cover, repeat;
       background-attachment: fixed;
@@ -71,7 +73,7 @@
   background-image:
     linear-gradient(
       rgba(255,200,150,0.5),
-      rgba(150,100,255,0.7)
+      rgba(150,100,255,0.6)
     ),
       url("../images/patterns/arches.png");
 
