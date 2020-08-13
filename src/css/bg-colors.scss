@@ -1,13 +1,11 @@
 
 .index-back {
-  background:
-  url("../images/gradient.svg")
-  center -520px / 7100px /* position / size */
-  no-repeat                /* repeat */
-  scroll                    /* attachment */
-  border-box              /* origin */
-  content-box              /* clip */
-  #9FFFBF;
+background: rgb(0,0,0);
+background: linear-gradient(346deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.09707633053221287) 50%, rgba(255,255,255,0) 100%);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position:  center 0px;
+  background-size: 100% 700px;
 
   animation: colorchange 100s infinite;
   @keyframes colorchange
