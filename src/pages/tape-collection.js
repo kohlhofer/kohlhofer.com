@@ -9,7 +9,7 @@ const tapePage = () => (
   <Layout pageTitle="Tape Collection" color="tapes">
   <div className="tapePage">
     <div className="tapePage-intro">
-<p>I support independent electronic musicians by buying and listening to their releases on cassette tapes. These illustrations of vintage tapes are for my own ongoing series <Link to="/podcast/1">Tannhäuser Gates</Link>.</p>
+<p>I support independent electronic musicians by buying and listening to their releases on cassette tapes. These illustrations of vintage tapes are for my own ongoing series <Link to="/tg/1">Tannhäuser Gates</Link>.</p>
     </div>
     <div className="single-tape">
     <Cassette label="Awesome Mixtape #1" cover="1" />
