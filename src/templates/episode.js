@@ -26,9 +26,9 @@ export default ({ pageContext: { episode } }) => (
     <AudioPlayer file={episode.file}></AudioPlayer>
   </div>
 <div className="episode-next">
-  <Link to={"/podcast/"+episode.next}><img src={left} className="" alt="left arrow" /></Link></div>
+  <Link to={"/tg/"+episode.next}><img src={left} className="" alt="left arrow" /></Link></div>
 <div className="episode-previous">
-  <Link to={"/podcast/"+episode.previous}><img src={right} className="" alt="right arrow" /></Link></div>
+  <Link to={"/tg/"+episode.previous}><img src={right} className="" alt="right arrow" /></Link></div>
   <div className="subscribe"> 
   <SignupForm/>
   </div>

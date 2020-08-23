@@ -14,7 +14,7 @@
     "gatsby-plugin-sharp": "^2.3.4",
     "gatsby-plugin-sitemap": "^2.2.24",
     "gatsby-source-filesystem": "^2.1.39",
-    "gatsby-transformer-remark": "^2.6.45",
+    "gatsby-transformer-remark": "^2.8.28",
     "gatsby-transformer-sharp": "^2.3.6",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",

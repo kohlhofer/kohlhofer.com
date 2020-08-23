@@ -31,7 +31,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
         episode.next = episodes.length;
     }
     createPage({
-      path: `/podcast/${episode.path}/`,
+      path: `/tg/${episode.path}/`,
       component: require.resolve("./src/templates/episode.js"),
       context: { episode },
     })
