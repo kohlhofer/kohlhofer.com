@@ -2,7 +2,8 @@
   position:relative;
   width:350px;
   height:219px;
-  margin:0px auto;
+  left: 50%;
+transform: translateX(-50%);
 }
 
 .tape-cover {

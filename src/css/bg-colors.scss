@@ -36,13 +36,13 @@ background: linear-gradient(346deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.097076330532
   background-color:#9FFFBF;
 }
 .tapes {
-  background: repeating-linear-gradient(
-  to right,
-  #F7F0D9,
-  #F7F0D9 20px,
-  #FADDF6 20px,
-  #FADDF6 40px
-);
+ background-image:
+    repeating-radial-gradient(
+      circle at center center,
+      #eee,
+      #ccc 60px
+    );
+ background-attachment: fixed;
 
 }
 .tape1 {

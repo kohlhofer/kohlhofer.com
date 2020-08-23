@@ -4,11 +4,35 @@
 }
 
 .tapePage-intro {
-  margin:30px 80px 10px 10px;
-  font-weight:200;
+  margin:30px 0px 50px 0px;
+  font-weight:400;
+  text-align:center;
 }
 
 .single-tape {
-  display:inline-block;
-  margin:20px 50px 20px 10px;
+  margin-bottom:40px;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .tapePage {
+    max-width:800px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: [col1-start] 1fr  [col2-start] 1fr [col2-end];
+    grid-template-rows: [row1-start] auto [row1-end];
+  }
+
+  .tapePage-intro {
+    grid-row: row1-start ;
+    grid-column: col1-start / col2-end;
+    text-align:left;
+    margin-bottom:0px;
+  }
+
+  .single-tape {
+    margin-bottom:20px;
+  }
+
 }
