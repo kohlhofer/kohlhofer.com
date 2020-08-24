@@ -19,7 +19,7 @@ const SignupForm = () => {
       onSubmit={handleSubmit}
       className="SignupForm"
     >
-      <p>Learn about updates, new episodes, etc...</p>
+      <p>Learn about updates, new music and posts, etc...</p>
       <div className="Wrapper">
         <input
           aria-label="Email address"

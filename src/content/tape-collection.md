@@ -1,6 +1,7 @@
 ---
 title: I made a set of vintage tape illustrations to go with my music
 date: 2020-08-22
+background: paper
 path: /blog/vintage-tape-illustrations
 ---
 

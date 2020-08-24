@@ -7,8 +7,8 @@ const IndexPage = () => (
   <Layout pageTitle="Welcome" color="index-back" hideFooter="true">
   <div className="index">
   <ul className="mainPoints">
-  <li><Link to="/tg/1">Tannhäuser Gates</Link></li>
   <li><Link to="/blog">Blog</Link></li>
+  <li><Link to="/tg/1">Tannhäuser Gates</Link></li>
   <li><Link to="/cv/">Curriculum Vitae</Link></li>
   <li><Link to="/social/">Social Media</Link></li>
   <li><Link to="/contact/">Contact</Link></li>

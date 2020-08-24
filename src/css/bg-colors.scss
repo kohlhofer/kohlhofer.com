@@ -7,7 +7,7 @@ background: linear-gradient(346deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.097076330532
   background-position:  center 0px;
   background-size: 100% 700px;
 
-  animation: colorchange 100s infinite;
+  animation: colorchange 50s infinite;
   @keyframes colorchange
   {
     0%   {background-color: #9FFFBF;}
@@ -44,6 +44,27 @@ background: linear-gradient(346deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.097076330532
     );
  background-attachment: fixed;
 
+}
+.paper {
+  background-image:
+    linear-gradient(
+      rgba(255,150,255,0.3),
+      rgba(255,255,200,0.6)
+    ),
+      url("../images/patterns/paper-fibers.png");
+      background-size:cover, repeat;
+      background-attachment: fixed;
+}
+.paper-alt {
+  background-image:
+    radial-gradient(
+      circle at top left,
+      rgba(255,200,150,0.3),
+      rgba(255,200,255,0.7)
+    ),
+      url("../images/patterns/paper-fibers.png");
+      background-size:cover, repeat;
+      background-attachment: fixed;
 }
 .tape1 {
   background-image:

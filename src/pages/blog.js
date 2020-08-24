@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 export default ({ data }) => {
   return (
-    <Layout pageTitle="Blog" color="blue-green">
+    <Layout pageTitle="Blog" color="paper-alt">
     <ul className="blog-entries">
     {data.allMarkdownRemark.edges.map(({ node }, index) => (
       <li className="blog-entry">

@@ -1,6 +1,7 @@
 ---
 title: Can we remove the issue of skill, and replace it with the issue of judgement?
 date: 2020-08-23
+background: paper
 path: /blog/the-issue-of-skill
 ---
 
@@ -8,7 +9,7 @@ The internet is an endless source of tutorials and resources that aid you in cre
 
 I am currently looking at web design and related technologies but find the following quote by Brian Eno on music making rather fitting: 
 
-> "The great benefit of computer sequencers is that they remove the issue of skill, and replace it with the issue of judgement."
+> The great benefit of computer sequencers is that they remove the issue of skill, and replace it with the issue of judgement.
 
 People who are just starting out in the creative or software industries are eager to explore. In addition most educational frameworks frown on straight up copying  someone else's solutions. Combine that with the seemingly unbound energy of youth you end up with a kind of brute force approach to reach desirable outcomes. 
 
@@ -25,11 +26,11 @@ Here are a few of the things I came across recently or have been using for a whi
 * [Subtle patterns](https://www.toptal.com/designers/subtlepatterns/) is an ever increasing collection of well crafted subtle background patterns.
 * [Lorem Ipsum](https://loremipsum.io) speaks for itself.
 * [Fill Murray](https://www.fillmurray.com) "The internet was missing the ability to provide custom-sized placeholder images of Bill Murray. Now it can."
-
+* [p5.js](https://p5js.org) is a javascript implementation of [Processing](https://processing.org) which "... is a flexible software sketchbook and a language for learning how to code within the context of the visual arts". And of course it is readily available as an option in [Codepen](https://codepen.io/kohlhofer/pen/MWKEzBR) so you can experiment away with zero set up overhead.
 
 All of the above came in handy and one point or the other. Non of them achieve anything I could not do already with an existing workflow. They just make it more convenient and quick (and fun). Along the same lines you can use something like [Gatsby.js](https://www.gatsbyjs.com) to build a site without ceding control to a platform like medium. And you can deploy it in seconds with [Netlify](https://www.netlify.com) without setting up or maintaining a secure server. You can experiment with advanced concepts like sentiment analysis in an afternoon or play with machine learning with a bare minimum of coding knowledge by using open source tools and open APIs. 
 
-I once built web based chess interface around the [stockfish chess engine](https://stockfishchess.org) that allowed you to analyze games and would easily beat most grand masters. It took me only days as I simply combined 3 or 4 readily available open projects (to parse positions, to integrate command line tools, deploy to to a small cloud instance, etc..). My contributions was only in the wiring together of the pieces. Because of that I ultimately did not keep it around for long.
+I once built web based chess interface around the [stockfish chess engine](https://stockfishchess.org) that allowed you to analyze games and would easily beat most grand masters. It took me only days as I simply combined 3 or 4 readily available open projects (to parse positions, to integrate command line tools, deploy to to a small cloud instance, etc..). My contributions was only in the wiring together of the pieces. I ultimately did not keep it around for long.
 
 Closing thoughts: 
 
