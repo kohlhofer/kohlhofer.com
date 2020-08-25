@@ -5,6 +5,8 @@ background: paper
 path: /blog/the-issue-of-skill
 ---
 
+import Codepen from "react-codepen-embed";
+
 The internet is an endless source of tutorials and resources that aid you in creating whatever your thing is. Most problems you run into are just a search away. And more and more elements that used to require dedicated software or hard won skills are now readily available for the taking or conveniently packaged up in free specialized tools. This ever increasing commoditization frees you up to remain focused on the creative act and higher order challenges (whatever they may be). 
 
 I am currently looking at web design and related technologies but find the following quote by Brian Eno on music making rather fitting: 
@@ -27,6 +29,9 @@ Here are a few of the things I came across recently or have been using for a whi
 * [Lorem Ipsum](https://loremipsum.io) speaks for itself.
 * [Fill Murray](https://www.fillmurray.com) "The internet was missing the ability to provide custom-sized placeholder images of Bill Murray. Now it can."
 * [p5.js](https://p5js.org) is a javascript implementation of [Processing](https://processing.org) which "... is a flexible software sketchbook and a language for learning how to code within the context of the visual arts". And of course it is readily available as an option in [Codepen](https://codepen.io/kohlhofer/pen/MWKEzBR) so you can experiment away with zero set up overhead.
+
+The latter makes it easy to make something like this:
+<Codepen hash="MWKEzBR" user="kohlhofer" height="300" defaultTab="preview" preview="false" />
 
 All of the above came in handy and one point or the other. Non of them achieve anything I could not do already with an existing workflow. They just make it more convenient and quick (and fun). Along the same lines you can use something like [Gatsby.js](https://www.gatsbyjs.com) to build a site without ceding control to a platform like medium. And you can deploy it in seconds with [Netlify](https://www.netlify.com) without setting up or maintaining a secure server. You can experiment with advanced concepts like sentiment analysis in an afternoon or play with machine learning with a bare minimum of coding knowledge by using open source tools and open APIs. 
 

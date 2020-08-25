@@ -17,8 +17,12 @@ I release some of my own music as [longer form mixes](/tg/1) that require a simi
 
 I will be expanding [the collection](/tape-collection/) as I make and share more music. Read on if you care about the details and [contact me](/contact) if you are interested in using them for your own projects. 
 
-I may open source them since I managed to package them up as a react component that one can easily re-use. To render a cassette you simply add the following: 
+Since I knew I would be making more of these I create myself a little template in sketch. There are just 3 custom elements for each cassette design: the body color, the outline color, and the label.
+
+Each tape shares: spools of tape, the cut out window, subtle shadows, details like highlights and screws.  
+
+This makes it easy to create and export new designs as single files that are then dynamically rendered on top of the animated reels. All that happens in a small self contained react component that one can easily re-use. I may decide to open source it. To render a cassette like the one above you simply add the following one liner to your page: 
 
     <Cassette cover="1" label="cool name for this tape" />
 
-If you do not set the cover attribute it will pick a random one. It was easy and obvious to animate the reels. One day I may make it more dynamic but right now they just spin on endlessly. 
+If you do not set the cover attribute it will pick a random one. It was easy and obvious to animate the reels but it would be nice to make it tie to music controls (play, stop, fast forward, etc) and even indicate the position in the track with the size of the spools.. One day I may make it more dynamic but right now they just spin on endlessly. 
