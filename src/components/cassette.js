@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+//import { Link } from "gatsby"
+//import PropTypes from "prop-types"
 import React, { Component } from "react"
-import tape from "../images/tapes/1.svg"
 import reel from "../images/reel.svg"
 import "../css/cassette.scss"
 

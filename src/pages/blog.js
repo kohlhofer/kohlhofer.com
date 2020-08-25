@@ -8,7 +8,7 @@ export default ({ data }) => {
   return (
     <Layout pageTitle="Blog" color="paper-alt">
     <ul className="blog-entries">
-    {data.allMarkdownRemark.edges.map(({ node }, index) => (
+    {data.allMdx.edges.map(({ node }, index) => (
       <li className="blog-entry">
       <div className="blog-entry-meta">
 	{node.frontmatter.date}
@@ -27,7 +27,7 @@ export default ({ data }) => {
 
 export const query = graphql`
     query {
-allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+allMdx(sort: {order: DESC, fields: [frontmatter___date]}) {
     edges {
       node {
         frontmatter {
@@ -39,7 +39,6 @@ allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
         wordCount {
           words
         }
-        excerpt(format: PLAIN, pruneLength: 20)
         id
       }
     }

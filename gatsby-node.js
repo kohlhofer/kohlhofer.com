@@ -40,7 +40,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   // Blog posts
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
 	edges {
 	  node {
 	    frontmatter {
@@ -54,7 +54,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   if (result.errors) {
     console.error(result.errors)
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: path.resolve(`src/templates/post.js`),

@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,7 +32,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
 	// CommonMark mode (default: true)
 	commonmark: true,
@@ -43,7 +43,8 @@ module.exports = {
 	// GitHub Flavored Markdown mode (default: true)
 	gfm: true,
 	// Plugins configs
-	plugins: [],
+	gatsbyRemarkPlugins: [],
+        extensions: [`.md`, `.mdx`],
       },
     },
     {
