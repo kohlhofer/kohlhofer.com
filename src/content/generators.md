@@ -30,7 +30,7 @@ Here are a few of the things I came across recently or have been using for a whi
 
 All of the above came in handy and one point or the other. Non of them achieve anything I could not do already with an existing workflow. They just make it more convenient and quick (and fun). Along the same lines you can use something like [Gatsby.js](https://www.gatsbyjs.com) to build a site without ceding control to a platform like medium. And you can deploy it in seconds with [Netlify](https://www.netlify.com) without setting up or maintaining a secure server. You can experiment with advanced concepts like sentiment analysis in an afternoon or play with machine learning with a bare minimum of coding knowledge by using open source tools and open APIs. 
 
-I once built web based chess interface around the [stockfish chess engine](https://stockfishchess.org) that allowed you to analyze games and would easily beat most grand masters. It took me only days as I simply combined 3 or 4 readily available open projects (to parse positions, to integrate command line tools, deploy to to a small cloud instance, etc..). My contributions was only in the wiring together of the pieces. I ultimately did not keep it around for long.
+I once built web based chess interface around the [stockfish chess engine](https://stockfishchess.org) that allowed you to analyze games and would easily beat most grand masters. It took me only days as I simply combined 3 or 4 readily available open projects (to parse positions, to integrate command line tools, deploy to to a small cloud instance, etc..). My effort was mostly in the wiring together of the various pieces. I ultimately did not keep it around for long.
 
 Closing thoughts: 
 

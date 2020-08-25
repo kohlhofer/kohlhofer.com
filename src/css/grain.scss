@@ -9,8 +9,9 @@
   width:100%;
   height:100%;
   background-image: url("../images/patterns/noise.png");
+  background-size: 150px 150px;
   animation: static 1s steps(1) infinite;
-  opacity:0.1;
+  opacity:0.05;
   z-index:11;
   pointer-events: none;
 }
